@@ -1,0 +1,27 @@
+{
+  "position_xy_m": 0.01,
+  "yaw_deg": 20.0,
+  "mass_multiplier": [
+    0.8,
+    1.2
+  ],
+  "friction_multiplier": [
+    0.8,
+    1.2
+  ],
+  "friction_buckets": 64,
+  "pd_stiffness_multiplier": [
+    0.8,
+    1.2
+  ],
+  "pd_damping_multiplier": [
+    0.8,
+    1.2
+  ],
+  "q_noise_std": 0.003,
+  "dq_noise_std": 0.05,
+  "tactile_flip_probability": 0.002,
+  "force_newton": 0.02,
+  "torque_nm": 0.0002,
+  "force_probability": 0.01
+}

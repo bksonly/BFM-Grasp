@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+*.pt
+*.ckpt
+*.h5
+*.usd
+*.usdc
+*.npz
+.venv/
+logs/
+cache/
+node_modules/
+
+review-reference/
+
+# Small, required reproducibility bundle (ordinary Git blobs, not LFS).
+!data/references/**/*.h5
+!assets/sharpa/**/*.usd
+!assets/sharpa/*.usd
+runs/
+.cache/
+third_party/ConTrack/assets/usd_cache/

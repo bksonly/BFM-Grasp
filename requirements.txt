@@ -1,0 +1,21 @@
+# Install into the Isaac Sim 5.1 / IsaacLab environment; do not install BFM-Zero's locomotion environment.
+numpy==1.26.0
+h5py==3.16.0
+scipy
+pin==2.7.0
+trimesh==4.5.1
+rtree==1.3.0
+gymnasium==1.2.1
+tensordict==0.14.3
+pydantic==2.11.10
+hydra-core
+omegaconf
+tensorboard
+matplotlib
+imageio[ffmpeg]
+wandb
+prettytable
+toml
+gitpython
+rich
+tqdm

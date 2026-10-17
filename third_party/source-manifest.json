@@ -1,0 +1,1048 @@
+[
+  {
+    "name": "BFM-Zero",
+    "commit": "318cf44a3262e5bdec5944f82f1a5f509b95d09b",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "sha256": "8f00348dfc86a04c5ade90c9901f8fbbf3a9b62c4e1b44b0fe4a796d79c2d4e5"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "db2e35513dbadcdc67f5819a3bfee2777786538dd3531620cd5fbd4b6ed6e538"
+      },
+      {
+        "path": "README.md",
+        "sha256": "eac05e777dcf8326c50c086c1b7b8a538a6c3f9a8522b7bce1b8fd0b3ce029ba"
+      },
+      {
+        "path": "humanoidverse/__init__.py",
+        "sha256": "3470120dd4dc4e6479dd5006d0f51e89835290f0c5d6f8157facf18261b6772a"
+      },
+      {
+        "path": "humanoidverse/agents/__init__.py",
+        "sha256": "62fb98cd69cab6a05bf88a86f0702efa7848600b208fd56673f6fda3bbcefa3b"
+      },
+      {
+        "path": "humanoidverse/agents/base.py",
+        "sha256": "b1cf05ef755fcccaab727c3aafb0743f9e7f07f5bcb4583e61ae3272d9262cc4"
+      },
+      {
+        "path": "humanoidverse/agents/base_model.py",
+        "sha256": "a30aa94f877ab6d96c03e9305460c9edc9dc8c1b862178a114ace7a0bff484f8"
+      },
+      {
+        "path": "humanoidverse/agents/buffers/load_data.py",
+        "sha256": "8822c9648dfcad0baa2d42d07bca212f6c93a100ec86eb065b0a0d412cc46e93"
+      },
+      {
+        "path": "humanoidverse/agents/buffers/trajectory.py",
+        "sha256": "4e00920e73fdd429dda0dbc5527effd12a370c6fcea5397f2d20c3b2fa35824d"
+      },
+      {
+        "path": "humanoidverse/agents/buffers/transition.py",
+        "sha256": "116509bd2635dc20a9d50a77f085f63c3d18433d0ef1d8e6bb1ceab71c9dfa6e"
+      },
+      {
+        "path": "humanoidverse/agents/envs/humanoidverse_isaac.py",
+        "sha256": "6b95ca28e6e45cef75f3a0ee76507d157e871604b95d25baaaf5c653107327eb"
+      },
+      {
+        "path": "humanoidverse/agents/envs/utils/gym_spaces.py",
+        "sha256": "284f825232f75882153dfca7517511b61c3f2cb810f1f2c549410c1894100ef0"
+      },
+      {
+        "path": "humanoidverse/agents/envs/utils/history_handler.py",
+        "sha256": "e785352bede15c9762ac2963c640fe04b3bc269061cc58abaf622bbd1e7800a5"
+      },
+      {
+        "path": "humanoidverse/agents/evaluations/base.py",
+        "sha256": "2e049b49e80fc8626673f99a0da78eae9df425af76bc191d02d602651551ca01"
+      },
+      {
+        "path": "humanoidverse/agents/evaluations/g1env.py",
+        "sha256": "4ac881d5cf6a6385bc7908f75b906ad1d14d051fedcf3b71107608b53c53a2dd"
+      },
+      {
+        "path": "humanoidverse/agents/evaluations/humanoidverse_isaac.py",
+        "sha256": "f292b57c32a5ba8b1e2d2f17d668ecbb3e461cdc744221f681c352141f832cff"
+      },
+      {
+        "path": "humanoidverse/agents/fb/__init__.py",
+        "sha256": "c776988890d5da816ac69edf332560e6c7bfbfef58137f5cfaa080d58c5c9462"
+      },
+      {
+        "path": "humanoidverse/agents/fb/agent.py",
+        "sha256": "b6e3327098a3052770490d2214507cfcfcdbe40b85823f16e307b9ef96ba6e57"
+      },
+      {
+        "path": "humanoidverse/agents/fb/huggingface.py",
+        "sha256": "ff03ea4f57d5f3a5e6195b6e2a99cb1870f3475711def39fa2504d3117a9b267"
+      },
+      {
+        "path": "humanoidverse/agents/fb/model.py",
+        "sha256": "d8292b0550f724c6ad914cddb691f2f59a4a5b1b62c01109d24275ad960e68be"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr/__init__.py",
+        "sha256": "3aa7936beae597f080e783bd2d5ff5ef37cd869f7af8f868383b757c73a15fe1"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr/agent.py",
+        "sha256": "dc20e60451bce19fc1fa618c556a100f6f37e2baca1e6a12a7e6152a6a9a251c"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr/configs.py",
+        "sha256": "a1303a4739e94960b0d287e6d4fdf20549e8c88983c1dd6cf730f193f002b4cc"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr/huggingface.py",
+        "sha256": "ced67b76d627f918e9925b98ce674ceb1abf77934c7eae6a9e17977bf76b5b09"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr/model.py",
+        "sha256": "941ce80bf45b8e471ea83df01f76e28dc13553ab5f7024f9220b46cf0c744c84"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr_aux/__init__.py",
+        "sha256": "3aa7936beae597f080e783bd2d5ff5ef37cd869f7af8f868383b757c73a15fe1"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr_aux/agent.py",
+        "sha256": "df34b4c9c4f4b4f0d067fe781f3f8166c94f4b2747e83c641a5101f2c20679bd"
+      },
+      {
+        "path": "humanoidverse/agents/fb_cpr_aux/model.py",
+        "sha256": "a73db508600a18cff0a84943d755752047b15e79aa8208e6a09699eeaf20fc29"
+      },
+      {
+        "path": "humanoidverse/agents/load_utils.py",
+        "sha256": "a429ce0f1e7337e1b9bdc77703d1da720b51967d7d09f187c0344e02ab026388"
+      },
+      {
+        "path": "humanoidverse/agents/misc/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/agents/misc/loggers.py",
+        "sha256": "1958089f92138775aaf2738de9f08cf2a7005c9d3e940796ea44dd57b3dac5d7"
+      },
+      {
+        "path": "humanoidverse/agents/misc/zbuffer.py",
+        "sha256": "6feac51d924e9d63e0d45c11c9e23fb288d05f553c01e13f1d5ad0bbf94de12d"
+      },
+      {
+        "path": "humanoidverse/agents/nn_filter_models.py",
+        "sha256": "8c293e1111bf053c39348f8cf74c6a03d196ed7ae47050d7ed054390f38652d3"
+      },
+      {
+        "path": "humanoidverse/agents/nn_filters.py",
+        "sha256": "1d279d945f300acd4e545b58f80f233052b9c93edbaecb88d94fb40ec821cc15"
+      },
+      {
+        "path": "humanoidverse/agents/nn_models.py",
+        "sha256": "bace2c9967320ab0cf1e570054acf1f7e0378f15690e11af11fcce462b3a9254"
+      },
+      {
+        "path": "humanoidverse/agents/normalizers.py",
+        "sha256": "5a7382f1ab43caa44fe9acf6883f6ae1e4638abb9f6063780dfd1333cee2db83"
+      },
+      {
+        "path": "humanoidverse/agents/pytree_utils.py",
+        "sha256": "0ed338e23e0395623db75d8ed73cd3ac205064094c2f82076eab14b79e6ff940"
+      },
+      {
+        "path": "humanoidverse/agents/utils.py",
+        "sha256": "ee8d66a79b4379b544b121d8d611b42013d15e3691b85fb4b1170119b31bf018"
+      },
+      {
+        "path": "humanoidverse/agents/wrappers/humenvbench.py",
+        "sha256": "3b24f103f8f60003e35d295782a4fe9e9080066b22f08a0afb15ca5554e83f10"
+      },
+      {
+        "path": "humanoidverse/config/base.yaml",
+        "sha256": "51f031972ae15c527e412009784d00ae345c7f66f6d7f87c7f69fecfdcfa1314"
+      },
+      {
+        "path": "humanoidverse/config/base/fabric.yaml",
+        "sha256": "52f1bbefdd181e5778c797b8f8686f86177ced7ba3f715bf03cc356cf01bc450"
+      },
+      {
+        "path": "humanoidverse/config/base/hydra.yaml",
+        "sha256": "5edd12020b36efaea773d2fa9669d981b308b7ccda7508bdc04e3cbc63424c92"
+      },
+      {
+        "path": "humanoidverse/config/base/structure.yaml",
+        "sha256": "84192bf4135b35a2117577dfce596e3f7d193cb930d92c1d1b281e4c43a46f0a"
+      },
+      {
+        "path": "humanoidverse/config/base_eval.yaml",
+        "sha256": "37680a4f107327f0f526113a9d49dd6c964023cf1090654085d841d5a6fc22a7"
+      },
+      {
+        "path": "humanoidverse/config/callbacks/autoresume.yaml",
+        "sha256": "40c5bce3c6f1c3f11fae157c45bac7d058e80212bc2e911d3052d69405128745"
+      },
+      {
+        "path": "humanoidverse/config/callbacks/im_eval.yaml",
+        "sha256": "7d231a37f64541dc45ca661e88d12918b1688044fd75f726453acce0ffbfdcd1"
+      },
+      {
+        "path": "humanoidverse/config/callbacks/model_save.yaml",
+        "sha256": "52b86a3abba6a52df264a1965e85c70554f25c139b280614dc98d557032ee084"
+      },
+      {
+        "path": "humanoidverse/config/domain_rand/domain_rand.yaml",
+        "sha256": "faa55c426be6202f7582ba318bac797e46dbedfa70e150e17fd69f2d5f742555"
+      },
+      {
+        "path": "humanoidverse/config/env/base_task.yaml",
+        "sha256": "636d020e12373a061000b7f676d80c9f060b7ad6439b3b9b5f74f620683a8570"
+      },
+      {
+        "path": "humanoidverse/config/env/legged_base.yaml",
+        "sha256": "7480d2fe09edcbf59a236cecdef623f9b07fd83ec40b13e650001e569890f192"
+      },
+      {
+        "path": "humanoidverse/config/env/legged_motions.yaml",
+        "sha256": "06b99581f90f1c89f6dc27aad8c918b66f167759c55e394bbab6b12c308d0726"
+      },
+      {
+        "path": "humanoidverse/config/exp/bfm_zero/bfm_zero.yaml",
+        "sha256": "d63b2c4d3707c0127577c816730aa283a01e2b45649006cd6fb7140ae6a8d761"
+      },
+      {
+        "path": "humanoidverse/config/obs/bfm_zero_obs.yaml",
+        "sha256": "3037b6ec30cd1084ae846e03e8f5479e817f9c94c10cce099ab9ace45dfd4f1d"
+      },
+      {
+        "path": "humanoidverse/config/rewards/reward_bfm_zero.yaml",
+        "sha256": "4dd2638380d1088e2e6bb964fbfb387dbbd03e98c41c57064d1b11c910d7752e"
+      },
+      {
+        "path": "humanoidverse/config/robot/g1/g1_29dof.yaml",
+        "sha256": "3351a9083cad182f1da3d28b22fb9700eefee7ba0d78610bec48ee23794eb0d4"
+      },
+      {
+        "path": "humanoidverse/config/robot/g1/g1_29dof_hard_waist.yaml",
+        "sha256": "b3c8b7d25faca3908d874bef4471f1362385428612cce845d2df5467cd71f53e"
+      },
+      {
+        "path": "humanoidverse/config/robot/g1/g1_29dof_new_effort_limit.yaml",
+        "sha256": "6d1e78f944135d2629f0a6198359d954aeee32ddbae5795bf799654384489c90"
+      },
+      {
+        "path": "humanoidverse/config/robot/robot_base.yaml",
+        "sha256": "491199429572b6e762047f14e14f020e245dad0ce64edd556eec2b7a95c47a63"
+      },
+      {
+        "path": "humanoidverse/config/simulator/isaacsim.yaml",
+        "sha256": "eff29df3a8bf96487cf25371009a17282fe85670b3c5815f1662f1cf29761bc2"
+      },
+      {
+        "path": "humanoidverse/config/simulator/mujoco.yaml",
+        "sha256": "ebe248ca7050da75ae070bac56923fd23050a445e659c34c938e87a4a6631411"
+      },
+      {
+        "path": "humanoidverse/config/terrain/terrain_base.yaml",
+        "sha256": "4eba4135ce0be52ba65543bbaa572e09370a790c85a645473549a0d71d9bb9f0"
+      },
+      {
+        "path": "humanoidverse/config/terrain/terrain_locomotion_plane.yaml",
+        "sha256": "d173ad689c434b649eab94b2530f7dbc4159c76fca3961de1f13275b174a453a"
+      },
+      {
+        "path": "humanoidverse/envs/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/envs/base_task/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/envs/base_task/base_task.py",
+        "sha256": "c395035893487c26a12cc73b9a1ba0bc31180f07f1d5bec16506d28c45e10002"
+      },
+      {
+        "path": "humanoidverse/envs/env_utils/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/envs/env_utils/command_generator.py",
+        "sha256": "ad67464ce729bd18f4cf8daea7aefe271a8d41bf21f8473a6a2e11e5d03e66c2"
+      },
+      {
+        "path": "humanoidverse/envs/env_utils/general.py",
+        "sha256": "01183a39df61b714f9931322b1537daad2e595ad21cc688af841272282dbc584"
+      },
+      {
+        "path": "humanoidverse/envs/env_utils/history_handler.py",
+        "sha256": "5c2f5eaf0003ac8a7a8f75742fae78c7fcc82b0f0f1df7f175e6ce5626b0190c"
+      },
+      {
+        "path": "humanoidverse/envs/env_utils/terrain.py",
+        "sha256": "30062d375b13c6fec851c72cd4525c4e66df2cfc5ab2e6c1a4145558fe554e8b"
+      },
+      {
+        "path": "humanoidverse/envs/env_utils/visualization.py",
+        "sha256": "a8e514b8a74b11347b1e444d4d5b6246b76412b0ada451f9dd85a9af0cfd0c45"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/__init__.py",
+        "sha256": "6b1c239290991af677eb6ebabee323eee070604b6f60a404fc54aafc7d829ed5"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/base.py",
+        "sha256": "1445e4e6f363aa0de6379386023fd8741de26a76e4db0e5ee81c8841e5eccc07"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/bench/__init__.py",
+        "sha256": "8acbccaf92d2294f0369db64b990fd0e71c194ddcee0998c16b04d3755cae8ff"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/bench/reward_eval.py",
+        "sha256": "7236fce4fe439b2f328f21539fb450ae5e8f7a00d96ab20ab9d301952a9be7c6"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/bench/reward_eval_hv.py",
+        "sha256": "24547cb7385dd14a3c97ec5ce9b3e9a82f76292889a33fb5f5c97428a482d8b2"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/bench/tracking_eval.py",
+        "sha256": "b7c5febe3a47f2e26e4830694275422e2ee1fd90dbfc37387a84a39326e95cb9"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/bench/tracking_eval_hv.py",
+        "sha256": "916de5219c4805b06e6f817c4791aafcfca1a3b73ae3aaff2916c12e29e7f6b0"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/collision.py",
+        "sha256": "5835e0542ab17ceffeff5577c4331d2a67f74ba4d7fd536256681487ba33571c"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/rewards.py",
+        "sha256": "4cf4928aa7066b026b14d6bd86e055d90411b9bfd4fa36860cc55898911172a2"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/robot.py",
+        "sha256": "d914e919647a5eb058209b812990233b1dd86d337694cbae8acb4054c8a11f9b"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/robot_29dof.py",
+        "sha256": "6d7df34df2039e1846d3b119a98aaa1ac0e9f61a02589ab5bcc1c382db86a4e1"
+      },
+      {
+        "path": "humanoidverse/envs/g1_env_helper/robot_random.py",
+        "sha256": "ae0c3034adccbf236b97c9a5ecc774f0010caecddfd018f06ac062ae4a0ae053"
+      },
+      {
+        "path": "humanoidverse/envs/gymnasium_wrapper.py",
+        "sha256": "ddad9161dc6fb979f9d2434a6c91922dfb7d6c6454ae3dd7250a5bb4b43d5950"
+      },
+      {
+        "path": "humanoidverse/envs/legged_base_task/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/envs/legged_base_task/legged_robot_base.py",
+        "sha256": "bc00a197aac294bb7b8200194bc5daf6ed0801d1422151aa811d7ca34fe08776"
+      },
+      {
+        "path": "humanoidverse/envs/legged_robot_motions/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/envs/legged_robot_motions/legged_robot_motions.py",
+        "sha256": "c2adfe2fa3d6db1b7d6ceb0c809aae2faf2f589f8321256ff05d6cba3747a359"
+      },
+      {
+        "path": "humanoidverse/goal_inference.py",
+        "sha256": "9dfc4b7901a2782fc3e88542c11a5f95f905dd46eb1c05a0968f358cfde4dcca"
+      },
+      {
+        "path": "humanoidverse/reward_inference.py",
+        "sha256": "7e150556fb780c18e0717d95f1c633fbbc992f6c9d055e88be8862d3845d0bdb"
+      },
+      {
+        "path": "humanoidverse/simulator/__init__.py",
+        "sha256": "b3a1d61b680f8890535d62ea0d170dcd747e6c12426de3850551b5f5047e9161"
+      },
+      {
+        "path": "humanoidverse/simulator/base_simulator/__init__.py",
+        "sha256": "18c96191ab32f6fd8d78608b54255468fb12f5db6dd5b13db2367209162195c8"
+      },
+      {
+        "path": "humanoidverse/simulator/base_simulator/base_simulator.py",
+        "sha256": "73903d45018296a6b7c68a08a0c4da0ad488d5a7eaefea4a12f3e11ae38f69bf"
+      },
+      {
+        "path": "humanoidverse/simulator/genesis/genesis.py",
+        "sha256": "186ae97d2400f211d5f6f0fb077cad7dd6eea878bd58ac0d8cc32c3243b7d0b3"
+      },
+      {
+        "path": "humanoidverse/simulator/genesis/genesis_mjdebug.py",
+        "sha256": "51669f19beeb27501820b5e34326f31f28a47051dd887d1eec8e65486339c01b"
+      },
+      {
+        "path": "humanoidverse/simulator/genesis/genesis_viewer.py",
+        "sha256": "0e8102d07f73ae871da4463aea03891eb9dbe58ac8e4f74caed2d88124c11a32"
+      },
+      {
+        "path": "humanoidverse/simulator/genesis/tmp_gs_utils.py",
+        "sha256": "49e92ee1f32b0340cb587e1b8081167755e55a6a89128f04cadae4953a80b6bb"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacgym/isaacgym.py",
+        "sha256": "5e5e44bd04382463681b381d12c0ce73c30da417d719873011ad059db3aad718"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacgym/isaacgym_hoi.py",
+        "sha256": "d7f583ae204a41d5b9adee9895ed6b63f3aad55e79f8029166d9d27e539a7f50"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacsim/event_cfg.py",
+        "sha256": "f0902a7c78b9c9cb8192400ab211f0a6859e36ade8ed8b4863398cbce0e33c22"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacsim/events.py",
+        "sha256": "b485f4a1787eb19eeed16462b666a73c50b780cfb353850162182852e38f927c"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacsim/isaaclab_cfg.py",
+        "sha256": "6c14c00d7e57ad8d833e60d9752064d72273f757ba4692c43c5168e8c5a18c8f"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacsim/isaaclab_viewpoint_camera_controller.py",
+        "sha256": "4584ff85b8495aa4ddefc8477ba72fb8ee607d7e489cd071624db0cfa1914405"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacsim/isaacsim.py",
+        "sha256": "c546e0390b6ef2c5cd37655f64f5d677a0c2a13df05c8a11e3508f902f12b4aa"
+      },
+      {
+        "path": "humanoidverse/simulator/isaacsim/isaacsim_articulation_cfg.py",
+        "sha256": "3c72973717d1a339c3e2bb0aa91fd5994094c5f01acaaba649ce55626709ab75"
+      },
+      {
+        "path": "humanoidverse/simulator/mujoco/mujoco.py",
+        "sha256": "c45b71ffcdf85d1b0a9ed761f03b3c906b5fd3ec5b3f14d3264a60dcfabcec9b"
+      },
+      {
+        "path": "humanoidverse/tracking_inference.py",
+        "sha256": "ad6ba0d43e8308be2742544f130754f2e737abc21f831a2caacf16223d46803c"
+      },
+      {
+        "path": "humanoidverse/train.py",
+        "sha256": "9d8865241b2e0ae318e16f8f199e643228729c3dc5152d7ed8a9639e1177e977"
+      },
+      {
+        "path": "humanoidverse/utils/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/utils/g1_env_config.py",
+        "sha256": "427d9593ea04ce5944b813733fc7c2565c998b27ee5b4c7e8453f8eac625abe6"
+      },
+      {
+        "path": "humanoidverse/utils/helpers.py",
+        "sha256": "216e8729e0dd9856d28010fed7addccef47100fb04cee499ba0beaea0c440c30"
+      },
+      {
+        "path": "humanoidverse/utils/logging.py",
+        "sha256": "3a6ad5207b0d9675043d8063fbf6f894ded5aba0e2e84225c1e1b8568a39db44"
+      },
+      {
+        "path": "humanoidverse/utils/math.py",
+        "sha256": "9851cde08b0ff21cdef1808a13ac752cf53fa35923d669c7c562e7e0cce5a164"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/motion_lib_base.py",
+        "sha256": "570cbfcd433820ec225807f16ebdad5fd4da6de9bb55a742dfb2968c15c4eb31"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/motion_lib_robot.py",
+        "sha256": "5c3f6cd62cc9b2ae7b7995dd6d6ff8f73eeb45323a54cd5b77c5684c0ee238b4"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/motion_utils/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/motion_utils/flags.py",
+        "sha256": "4c30e7fbc90d31d28cedcb4cb6e7bd9500c8ea135b3d46e914ff69c8f1a37dfc"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/motion_utils/rotation_conversions.py",
+        "sha256": "87b14b9260f214596056bf377bed29c6e28ce0131bc9513d9def2058f5cb7327"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/skeleton.py",
+        "sha256": "7941d669553c5a72f5d947947d53a349aa28a38a0c9490c6c8acd7ac56f16b20"
+      },
+      {
+        "path": "humanoidverse/utils/motion_lib/torch_humanoid_batch.py",
+        "sha256": "a720d7c17d1f0987bf11f48dbbb1a457e95a0338cf574c10b12b79cf92f73c77"
+      },
+      {
+        "path": "humanoidverse/utils/torch_utils.py",
+        "sha256": "d4e1faef90d8b17e2d1ff4d27ef087137f6df9fdaa0c75c604d4105d9d28e19c"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "00953c1599ebc401a06b297c02a5ccc428e58a98c6aa798efd63f1c5e591ff15"
+      },
+      {
+        "path": "static/images/ip.png",
+        "sha256": "6c9314dcc389ec2d0c88f0a89319eb45af483aea71be164e853798ba0f220b6f"
+      },
+      {
+        "path": "static/images/logo.png",
+        "sha256": "63e035576cc5b5730f66eec5213be9fbde0811140c489a345458382b75b7bdb3"
+      },
+      {
+        "path": "static/images/meta.png",
+        "sha256": "2e98aaa48456cffa8f319a31d757c31489a5919f2a2765fbb3e91f3a2c991747"
+      },
+      {
+        "path": "static/images/training_curve.png",
+        "sha256": "aeb5285e885a702315fcd00c162e1d36c75284a2b22f28249fa098a1b9a9d4a0"
+      },
+      {
+        "path": "uv.lock",
+        "sha256": "d24023431da1bbc2417a9877ac55eba74a6ddf866ea304db3f367a702c08705f"
+      }
+    ],
+    "exclusions": [
+      "model/",
+      "humanoidverse/data/"
+    ]
+  },
+  {
+    "name": "ConTrack",
+    "commit": "f5efe18e4b1f986566b252265c4bf63f3b67c6c6",
+    "files": [
+      {
+        "path": ".dockerignore",
+        "sha256": "c737d752c41cc9da0339fe776a242ac7c09be1d71ee3f954ca6f3a78b5b53f94"
+      },
+      {
+        "path": ".flake8",
+        "sha256": "302500f7fff03b0adb87df8796ddb03b14b281dcedb9102383cffa7c3fd9e179"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "05820a88839a36d0699d77ec07c017d97d8f56708d2064f07212978a7799be4e"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "fad339fada1c2002c825100b15cca4ff00578a4b6dff09a3188234f3444373f9"
+      },
+      {
+        "path": "README.md",
+        "sha256": "96b4179aed8dc7600d4da136ed1d0a3f11d6397a8649b93d6f4dc62783f29241"
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "sha256": "c7bb8cee50d1802d07a8ced4354a32ce55e7b92c42df9e9a07eaf219f3fc3169"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/elastomer.STL",
+        "sha256": "1611f42070a8fb34226508417bb930af53bbe9e3b619113136b60cb0595ca4ed"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/elastomer_surface.STL",
+        "sha256": "7f88a20e862895e3bf97d35c600b9eb5c2f2e49f8918ef9fe07bd82e6572fae8"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_DP.STL",
+        "sha256": "09ae5e485d42c651c70d025ef6bcd000f727dd1535836d7d8fa9de0686db4583"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_DP_visual.STL",
+        "sha256": "f21c6a8d12a21b29ff05127ec1987135cc966a283707165d93a30f9e74d4a0ed"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_MCP_VL.STL",
+        "sha256": "587e34505de3b4f5b7131e6554e0ab92a18a3c28d250ea46eaf728c4539bf77d"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_MCP_VL_visual.STL",
+        "sha256": "0e8b15c4d8426a26cb222b8c1592f5e913c079aebdc0abaecda273b7d8ed0f3a"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_MP.STL",
+        "sha256": "1f0a96877af9ec35f20941ae696e9e22cedc6e341703657b0c6d0ebc982897a9"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_MP_visual.STL",
+        "sha256": "0e9ac7a8208ab2478cdff8ae40036b93e040a05f89ae0c43ece83a62fdf15293"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_PP.STL",
+        "sha256": "6e4434712a5c668dbeda169e727629e95d4a9492fca431126543109451e2484f"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_PP_visual.STL",
+        "sha256": "881e6eeeaecbf0a8bd6b11fa7f41a5aa139900635fe82b765586460c9a9c1580"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_hand_C_MC.STL",
+        "sha256": "01e17ed8392d99e76d1c00a849749610c3f7715f18ea12b107ba56eba3541fee"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_hand_C_MC_visual.STL",
+        "sha256": "0e7c42e037b4bc94e35afd2f1c1d3c569d7b14554911bb380fa631691b5d2550"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_pinky_MC.STL",
+        "sha256": "f7a7192ae246a6b88f9096332216013c8f6be507ee0dc9bfd4444518453b0c13"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_pinky_MC_visual.STL",
+        "sha256": "98b520aa40d6f1fff0f433cfc6ef2baddb550a6452a8753301934812d111bbf1"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_CMC_VL.STL",
+        "sha256": "9c862ce10c4958ef967ed46fed837fafb20dd2c84a23ef9ee4f793576ef1fb93"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_DP.STL",
+        "sha256": "7bd0a9187d9cca7c3136d471784db39a3593b5264e16586002f73db42292dc6e"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_DP_visual.STL",
+        "sha256": "7bac46dd5699d6b2fed60fdb384199cdab7407343d61db3fc8737866096fa440"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_MC.STL",
+        "sha256": "3f15b81f22feec350ae2f60a7c69ca36028bd580d6cf4722d4f759d401ea02f9"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_MCP_VL_visual.STL",
+        "sha256": "47f990c04f09174666773687f9e4e1b4031dd150481c1d26719bbba874ae0709"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_MC_visual.STL",
+        "sha256": "da4fb47f6126ca3b653689aea6d958e08dde7d0c232a3043773e18f447aa121a"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_PP.STL",
+        "sha256": "2847673ad531a6d1fe3d12b3433d080358727def9acade9f0319c18579676b13"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/left_thumb_PP_visual.STL",
+        "sha256": "7f4a561b611af82e27bb5c8d6838d574e71e2ede42d25edf1f57c2b54ebde072"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/thumb_elastomer.STL",
+        "sha256": "8fb5b2036eda97fe4c2ce50ad8e021775185961c478c0d6f25f5a776588d9b14"
+      },
+      {
+        "path": "assets/meshes/sharpa/left/thumb_elastomer_surface.STL",
+        "sha256": "1b25efc390f9db9eca87ed167e7baa2e3220a417bbd49924beb077da458c6241"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/elastomer.STL",
+        "sha256": "1611f42070a8fb34226508417bb930af53bbe9e3b619113136b60cb0595ca4ed"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/elastomer_surface.STL",
+        "sha256": "7f88a20e862895e3bf97d35c600b9eb5c2f2e49f8918ef9fe07bd82e6572fae8"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_DP.STL",
+        "sha256": "09ae5e485d42c651c70d025ef6bcd000f727dd1535836d7d8fa9de0686db4583"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_DP_visual.STL",
+        "sha256": "f21c6a8d12a21b29ff05127ec1987135cc966a283707165d93a30f9e74d4a0ed"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_MCP_VL.STL",
+        "sha256": "350f66d656fef760a7f4f0c4a026951e9d831ca65a9c5e4e34825b694ed6b11a"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_MCP_VL_visual.STL",
+        "sha256": "ec48548aaafa6589112e9b609ed58f1b5e7ec0157ca15e0e4e8c93bff706a9d0"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_MP.STL",
+        "sha256": "98ad7e6e990f61857d6ad28860bba7e0dcba78761a513d60fdc527e9d56bbe8e"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_MP_visual.STL",
+        "sha256": "af867d754ae0f3d5c38610f72cf4699789c82bb0391c2a406e6924f76e850ec6"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_PP.STL",
+        "sha256": "ed975b59e2569759ff28a397dab71d84667161d3b90b41d625bc5e1f5ac6536c"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_PP_visual.STL",
+        "sha256": "aa8b0ac6b6a7769033daa149416035712b23b79af0a7ddeb83d62142f8ff8a14"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_hand_C_MC.STL",
+        "sha256": "8c52941db271e9331f0b32ec581c078af7f8cb372fb97f021d5b1dec2d2426ae"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_hand_C_MC_visual.STL",
+        "sha256": "496da9148b99a003ebbbb2eab879c3b9ab1509f74294599f22d79892e82879a4"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_pinky_MC.STL",
+        "sha256": "1f8207aff0f2f6ca2f1de1a8bbbbcd4183300bc3778d55821c2aae9b490b7dd3"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_pinky_MC_visual.STL",
+        "sha256": "4b3902eda84c7f10cc7fd45f0512264a731d52ed8b9be91bf2fc9981d0e7c03d"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_CMC_VL_visual.STL",
+        "sha256": "ebaf499965a51e4b539b7ec5481efbddaf2003b69d0e5e72425a430cecd187b0"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_DP.STL",
+        "sha256": "7bd0a9187d9cca7c3136d471784db39a3593b5264e16586002f73db42292dc6e"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_DP_visual.STL",
+        "sha256": "7bac46dd5699d6b2fed60fdb384199cdab7407343d61db3fc8737866096fa440"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_MC.STL",
+        "sha256": "deb6d97eb2d7223d72c23ebb32f874644dcf78848389f14dcabe3016aae5dd6c"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_MCP_VL_visual.STL",
+        "sha256": "30d656738130093b7023100c73fac065a173aaba2e4314034c050c984005d634"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_MC_visual.STL",
+        "sha256": "81f4bf8c39117b7bf7a4f0fdeb577948056139a84927adc55e9b049434a41a3b"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_PP.STL",
+        "sha256": "795b35f943c4272314d5e72497aaea2ef998458b0259a6609577d3694aeff869"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/right_thumb_PP_visual.STL",
+        "sha256": "1024905f9af3ad14160ce55d2e1d98fb7028274f7b267bee8b057754eb165faa"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/thumb_elastomer.STL",
+        "sha256": "8fb5b2036eda97fe4c2ce50ad8e021775185961c478c0d6f25f5a776588d9b14"
+      },
+      {
+        "path": "assets/meshes/sharpa/right/thumb_elastomer_surface.STL",
+        "sha256": "1b25efc390f9db9eca87ed167e7baa2e3220a417bbd49924beb077da458c6241"
+      },
+      {
+        "path": "assets/simplify_mesh.py",
+        "sha256": "cf43ed1965c0c5cddaec38fc5d27c3acf55f922c99f389c2d7e350e55a17dde3"
+      },
+      {
+        "path": "assets/teaser.jpg",
+        "sha256": "0f8f08bc3ba1c4fde5544845ed0190959d07d503dfbb41ce73b0c388d18bd74a"
+      },
+      {
+        "path": "assets/urdf/sharpa_left.urdf",
+        "sha256": "770a1133c2073c330fb33a74c306630336ad5978949d6cdcaed29966c1bca48e"
+      },
+      {
+        "path": "assets/urdf/sharpa_right.urdf",
+        "sha256": "58d218d5a1c61a2b587edeb351c0708ddbc6b60817a7d2c245720e6b8847adab"
+      },
+      {
+        "path": "requirements.txt",
+        "sha256": "7171d2ed1d217b8042d1797ee233709567aa6716976de26d8b50c1708e9bab27"
+      },
+      {
+        "path": "rsl_rl_contrack/__init__.py",
+        "sha256": "eca880a726873a075dc37aba1c4da3bfa8f7a19df45ed963964e864b48c6bfcc"
+      },
+      {
+        "path": "rsl_rl_contrack/algorithms/__init__.py",
+        "sha256": "b94298d358d2442b61b3fbc23c22b786ea8299bd5398eef95ff381705672797e"
+      },
+      {
+        "path": "rsl_rl_contrack/algorithms/distillation.py",
+        "sha256": "397dfe4e4450504f5528024df79ede63c42b3a439859fa58a9663a628591b65d"
+      },
+      {
+        "path": "rsl_rl_contrack/algorithms/ppo.py",
+        "sha256": "3bb870d07c00ae3a096531b496d0ebacff778ad11e758022ff56141a696b49e8"
+      },
+      {
+        "path": "rsl_rl_contrack/env/__init__.py",
+        "sha256": "8b187dca6d7ca5f9f4ab6a8c30218ca7bd6d3f952706526cad4ae156d1541870"
+      },
+      {
+        "path": "rsl_rl_contrack/env/cons_mimic_reward_wrapper.py",
+        "sha256": "ef9035b293c622c894a248a4cb3cb0da8773e7effa8e67c073879fdfe7b60729"
+      },
+      {
+        "path": "rsl_rl_contrack/env/vec_env.py",
+        "sha256": "bd6c436fa7cd68720e3fe0df936809a2a813c4ce31e018498d2e3a20ce99e831"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/__init__.py",
+        "sha256": "6c182f409103f6c6ee74137f3c5eb62b1985f4b4e6b26d0d1d792ba9e3398b3d"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/actor_critic.py",
+        "sha256": "4bb5b0034df22e357c0acb729b409cd7979a7bce1810d317e1740fc211345fdc"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/actor_critic_recurrent.py",
+        "sha256": "4ccc7299731c3445fe85d069fcbb1c8d502ad4830a9744460fbf891faff5da84"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/rnd.py",
+        "sha256": "afac724e4100823a907598999e09b230d9b1cad06b31dc8ac3fd8fe2f42db168"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/student_teacher.py",
+        "sha256": "74b8e04c72e286298c9707f6636d2aaa25958f4b5989976d31560b424c951957"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/student_teacher_recurrent.py",
+        "sha256": "c79347e3cdd988ea091e876fe92e188507bc4dfb97894129e85a7d48ee08537c"
+      },
+      {
+        "path": "rsl_rl_contrack/modules/symmetry.py",
+        "sha256": "67cd77deaa783f6f61ff4f2d878f1ac89e51fa89f1766913a0203b33b8b272a0"
+      },
+      {
+        "path": "rsl_rl_contrack/networks/__init__.py",
+        "sha256": "39edf0ecab4b57f5e90e8f5fc5c07cc1f345b92bc0d21be5dc7bf8e266bd94c0"
+      },
+      {
+        "path": "rsl_rl_contrack/networks/memory.py",
+        "sha256": "1d99f244e8694a052c3afba2dc3735abf004f627d6650d4eeaf630b8a644d4ea"
+      },
+      {
+        "path": "rsl_rl_contrack/networks/mlp.py",
+        "sha256": "fe2e87bd0080e6990d3140f72deadacbcd785520698d6ff6e96c7fabd1909109"
+      },
+      {
+        "path": "rsl_rl_contrack/networks/normalization.py",
+        "sha256": "3028c732ca55a813dcf05405cdce7332f514840836a558be96de6a30f7b3dc6c"
+      },
+      {
+        "path": "rsl_rl_contrack/runners/__init__.py",
+        "sha256": "c808385b7bc85650f097708f4ac478d0aea517d90ec5712fcf4298007a3ebc86"
+      },
+      {
+        "path": "rsl_rl_contrack/runners/distillation_runner.py",
+        "sha256": "19da3d081d0e2e14b0d300a6c5b7c01311d6ffed346202f32bdd6ab2a1634bfc"
+      },
+      {
+        "path": "rsl_rl_contrack/runners/on_policy_runner.py",
+        "sha256": "200119938b0bccc34e8f160d0f3b7381908361ed4ba8ea09fd36705f24be5e6c"
+      },
+      {
+        "path": "rsl_rl_contrack/storage/__init__.py",
+        "sha256": "599a712105321c64423e65777d709ace050ef46d5f98b8791d697b9c4e55106e"
+      },
+      {
+        "path": "rsl_rl_contrack/storage/rollout_storage.py",
+        "sha256": "c23070f7e4528dce815e00008ce793f01d19cd45b0baed4774edc6281b3087a2"
+      },
+      {
+        "path": "rsl_rl_contrack/utils/__init__.py",
+        "sha256": "57d1926d619211b2c2fb19dc1797136e1a8415b6a84114ce1a69f671a08b6b72"
+      },
+      {
+        "path": "rsl_rl_contrack/utils/neptune_utils.py",
+        "sha256": "f24ae7c83680d7b360e9201c92186f3885f7f455767038a676ae42c68e2af5ea"
+      },
+      {
+        "path": "rsl_rl_contrack/utils/utils.py",
+        "sha256": "62372efd6b9c8015969c5efa0ae7f73fda45d3e39bf0a771aeabfe4f44526121"
+      },
+      {
+        "path": "rsl_rl_contrack/utils/wandb_utils.py",
+        "sha256": "b3c2a122c57db3d40537caa0698709899a6b5432e162874c70eeda77cc98d3ef"
+      },
+      {
+        "path": "scripts/__init__.py",
+        "sha256": "130d02c20f53635b6c73639331069c8c7cc7a6d91ed130cbef3059e90ff2b07b"
+      },
+      {
+        "path": "scripts/list_envs.py",
+        "sha256": "d96472846cff02e5bd9c779401fb5814a06b0e74892975dcd52082805544f957"
+      },
+      {
+        "path": "scripts/rsl_rl/__init__.py",
+        "sha256": "ed5a94f7623658a3a495d28d3a5076447c3846a093b9bcc58d46bcb87a1e60e8"
+      },
+      {
+        "path": "scripts/rsl_rl/cli_args.py",
+        "sha256": "9b6022d932a278bdccfa5d9746e2f6947c5d2b78aa0fb40259869b38288298ff"
+      },
+      {
+        "path": "scripts/rsl_rl/play.py",
+        "sha256": "23bcb3d968a3e382fb1e653f8b7e9fb1771557454d761d56fabbf62e0165c921"
+      },
+      {
+        "path": "scripts/rsl_rl/train.py",
+        "sha256": "f1280ce49c780b2964f4d9d40564c490adf6bc6e6032746c4f2d6c7130a21042"
+      },
+      {
+        "path": "scripts/tools/convert_urdf.py",
+        "sha256": "070a493097eead7b7d8ef51e6a1fbde0dec711e2ad3a9200dca02cbf792abc2f"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/__init__.py",
+        "sha256": "1c969b6c852715f8d56b9b51842de922f33b5f74c141d894650abfa20dab3825"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/robots/__init__.py",
+        "sha256": "c47f60016776031555d90873ec741e8397dcf2ef4a42576b8a1c01abf22635ec"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/robots/rby1a_sharpa.py",
+        "sha256": "f7e20d74b6a11e9773fe688c98dd985fe54838385c0affbf64dd3c82e835d171"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/robots/xarm_xhand_left.py",
+        "sha256": "6561bd1c79cb76d5e9065e87512b9ff67785d74ab892e34509fc40787b674771"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/robots/xarm_xhand_right.py",
+        "sha256": "e9d23f814b7a016252e59f526314b48b02a36ea67d3894e43827df2d4dac680b"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/__init__.py",
+        "sha256": "4108a671fff7692f5f99fd5070ffdfe2042374226c3f4d160d46434bc1b3e11b"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/__init__.py",
+        "sha256": "9b3dbcf0f85005ed2a52e0d1ab853ba107c1254bca13066b8ac1b43f6f2475bf"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/__init__.py",
+        "sha256": "b325d106945695e936b06a5dd6c2b82cc7ba8b2765e6475923743c026be14560"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/agents/__init__.py",
+        "sha256": "bb74600fd2b01bc1711775d7affc2a1999885f62a84f59f30358f413dea898b6"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/agents/rsl_rl_ppo_cfg.py",
+        "sha256": "00a333e43e9fb4d3b07a7bf4a558ba3e183354fca2a9a0e916e88ff3c9481aac"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/__init__.py",
+        "sha256": "2dd61dc2db72d0c2679c611c998119d6be045bdfe2afb0c6391f4001bd934728"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/actions.py",
+        "sha256": "561ec7078ef35dd0202d0bcb59661430f0a8bb0d4ff6c6d9792bcc03928d5ea3"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/domain_randomization.py",
+        "sha256": "7f80b7bab3dd22b7167f87c1950e24254863162389a3a8d6926edc3a1bc9f99e"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/observations.py",
+        "sha256": "bea76c1f449f12e917ac663d0be1bcfef19dfba5dd7888169c802320e1d9fa8f"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/rewards.py",
+        "sha256": "c9a85a0b077aecfd9efb3d08b3ad158cc9bea6c28d0c9684be1958ab8300e0d5"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/state.py",
+        "sha256": "f46a50c275bfdbf00c3622b6a3501fd087a011a453d37e9c247569d5c5aac12f"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/mdp/terminations.py",
+        "sha256": "a807cfa6fa8cd45a5047f5fbd5559de78c75346c62e1839285a95110b876ee63"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/rby1a_sharpa_env_cfg.py",
+        "sha256": "46187a0da8b06fafd253a837d769c54113ffefa031e8552e8ef55784fa33e591",
+        "bundled_sha256": "90bd4d2fd39bf24b84cf405c7ba01d3c4396737ad6d08a4b2429135435cb2de7",
+        "local_change": "Repository-local resource lookup; original imported hash retained as sha256."
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/__init__.py",
+        "sha256": "091c7585020be41beb323e476e98f2a33df4d9231a0c502d19d4ce3e244fb789"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/agents/__init__.py",
+        "sha256": "cd3448089096d737881c3b87f7240411f18549b08ce9d94a02b8f94a4e9cb711"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/agents/rsl_rl_ppo_cfg.py",
+        "sha256": "ce38cc27a25b13be73d3e3c70a86a41062feea872d7dff043dce2234c9662d11"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/__init__.py",
+        "sha256": "8caff576af06296fdaeee8d8f5a78f428c721ad871cfb4730cb4720c1914a57e"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/actions.py",
+        "sha256": "c938c657c7381dc959ac60007ab3858ab3f992ed1ede98ba4bd89434c67bf831"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/domain_randomization.py",
+        "sha256": "b1731c4523f43f4d2c2422be5630a4768bfc83f7e3dbce86e16eece972b47ca5"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/observations.py",
+        "sha256": "778935d6b4024124d06899fe2a576ed0ce6f19d34be4c310995416da36b68919"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/rewards.py",
+        "sha256": "f87c3a37de3ff055f923cc2317286dbde003d59755a0bcf5d573f72db294e273"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/state.py",
+        "sha256": "59941e8c7414eed8fc91c60f4a334058fe7bc653103cffeb7f0240e34a68eea3"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/mdp/terminations.py",
+        "sha256": "027bdde25bc3c695fa09c47269da59066c646c61884bece6d606ea51bc33d4b9"
+      },
+      {
+        "path": "source/ConTrack/ConTrack/tasks/manager_based/mimic_xarm_xhand/xarm_xhand_env_cfg.py",
+        "sha256": "581995bbd1cb5e4cc74225e01acad66d59f921bcb3e5a2ecfca586ec204a5201"
+      },
+      {
+        "path": "source/ConTrack/config/extension.toml",
+        "sha256": "5bb459072d186c7dc484b75c13f466bdabef54f480cb084c508dce0da4a29ef5"
+      },
+      {
+        "path": "source/ConTrack/pyproject.toml",
+        "sha256": "5427dcc108de1d2537775540acdd539d65a2f31506ba992bc95e5bfeefb6f288"
+      },
+      {
+        "path": "source/ConTrack/setup.py",
+        "sha256": "0903d604a8eae5b82b2cc486e374b20dc9aa9edf014a5108d83c8f14be47ac7f"
+      }
+    ],
+    "exclusions": [
+      "assets/meshes/rby1a/",
+      "assets/meshes/xarm/",
+      "assets/meshes/xhand/",
+      "assets/meshes/xarm_xhand_mount.stl",
+      "non-Sharpa and full-body visual URDFs",
+      "data/ (unrelated upstream demo trajectories)"
+    ],
+    "local_derivatives": [
+      {
+        "path": "assets/urdf/rby1a_sharpa_kinematics.urdf",
+        "sha256": "afade45043debd9bc322d6c921626cef4e13728b0446cf8355a9455881132e52",
+        "source": "assets/urdf/rby1a_sharpa.urdf",
+        "change": "All visual/collision geometry removed. Joint kinematics retained for legacy reference FK only."
+      }
+    ]
+  }
+]

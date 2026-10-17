@@ -1,0 +1,291 @@
+{
+  "metric": "Success/overall_macro_pct",
+  "condition": "reference_z",
+  "aggregation": "rolling per-object success, equal-weight macro average",
+  "series": {
+    "contrack": [
+      {
+        "step": 349,
+        "success_pct": 17.623865127563477
+      },
+      {
+        "step": 698,
+        "success_pct": 28.659015655517578
+      },
+      {
+        "step": 1047,
+        "success_pct": 39.35286331176758
+      },
+      {
+        "step": 1396,
+        "success_pct": 47.751731872558594
+      },
+      {
+        "step": 1745,
+        "success_pct": 51.970157623291016
+      },
+      {
+        "step": 2094,
+        "success_pct": 55.38526153564453
+      },
+      {
+        "step": 2443,
+        "success_pct": 57.22911071777344
+      },
+      {
+        "step": 2792,
+        "success_pct": 59.071495056152344
+      },
+      {
+        "step": 3141,
+        "success_pct": 60.765262603759766
+      },
+      {
+        "step": 3490,
+        "success_pct": 62.28696823120117
+      },
+      {
+        "step": 3839,
+        "success_pct": 63.97565460205078
+      },
+      {
+        "step": 4188,
+        "success_pct": 65.50904846191406
+      },
+      {
+        "step": 4537,
+        "success_pct": 66.35551452636719
+      },
+      {
+        "step": 4886,
+        "success_pct": 67.59341430664062
+      },
+      {
+        "step": 5235,
+        "success_pct": 68.65625762939453
+      },
+      {
+        "step": 5584,
+        "success_pct": 69.62286376953125
+      },
+      {
+        "step": 5933,
+        "success_pct": 70.45565032958984
+      },
+      {
+        "step": 6282,
+        "success_pct": 71.18757629394531
+      },
+      {
+        "step": 6631,
+        "success_pct": 71.66505432128906
+      },
+      {
+        "step": 6980,
+        "success_pct": 72.21450805664062
+      },
+      {
+        "step": 7329,
+        "success_pct": 75.4443359375
+      },
+      {
+        "step": 7678,
+        "success_pct": 77.548828125
+      },
+      {
+        "step": 8027,
+        "success_pct": 78.6865234375
+      },
+      {
+        "step": 8376,
+        "success_pct": 79.06494140625
+      },
+      {
+        "step": 8725,
+        "success_pct": 79.8486328125
+      },
+      {
+        "step": 9074,
+        "success_pct": 80.33447265625
+      },
+      {
+        "step": 9423,
+        "success_pct": 81.2744140625
+      },
+      {
+        "step": 9772,
+        "success_pct": 81.97509765625
+      },
+      {
+        "step": 10121,
+        "success_pct": 82.4609375
+      },
+      {
+        "step": 10470,
+        "success_pct": 82.89794921875
+      },
+      {
+        "step": 10819,
+        "success_pct": 83.06396484375
+      },
+      {
+        "step": 11168,
+        "success_pct": 83.28857421875
+      },
+      {
+        "step": 11517,
+        "success_pct": 83.95263671875
+      }
+    ],
+    "raw": [
+      {
+        "step": 349,
+        "success_pct": 14.687470436096191
+      },
+      {
+        "step": 698,
+        "success_pct": 21.058822631835938
+      },
+      {
+        "step": 1047,
+        "success_pct": 29.78782081604004
+      },
+      {
+        "step": 1396,
+        "success_pct": 34.804222106933594
+      },
+      {
+        "step": 1745,
+        "success_pct": 37.776519775390625
+      },
+      {
+        "step": 2094,
+        "success_pct": 39.71608352661133
+      },
+      {
+        "step": 2443,
+        "success_pct": 40.071598052978516
+      },
+      {
+        "step": 2792,
+        "success_pct": 42.07499313354492
+      },
+      {
+        "step": 3141,
+        "success_pct": 43.6684455871582
+      },
+      {
+        "step": 3490,
+        "success_pct": 44.80662536621094
+      },
+      {
+        "step": 3839,
+        "success_pct": 45.72068786621094
+      },
+      {
+        "step": 4188,
+        "success_pct": 47.72381591796875
+      },
+      {
+        "step": 4537,
+        "success_pct": 48.701908111572266
+      },
+      {
+        "step": 4886,
+        "success_pct": 49.517250061035156
+      },
+      {
+        "step": 5235,
+        "success_pct": 50.142913818359375
+      },
+      {
+        "step": 5584,
+        "success_pct": 50.68777084350586
+      },
+      {
+        "step": 5933,
+        "success_pct": 51.60868835449219
+      },
+      {
+        "step": 6282,
+        "success_pct": 52.66407775878906
+      },
+      {
+        "step": 6631,
+        "success_pct": 54.0191535949707
+      },
+      {
+        "step": 6980,
+        "success_pct": 54.8961296081543
+      },
+      {
+        "step": 7329,
+        "success_pct": 57.99560546875
+      },
+      {
+        "step": 7678,
+        "success_pct": 60.59326171875
+      },
+      {
+        "step": 8027,
+        "success_pct": 61.99462890625
+      },
+      {
+        "step": 8376,
+        "success_pct": 63.271484375
+      },
+      {
+        "step": 8725,
+        "success_pct": 64.5947265625
+      },
+      {
+        "step": 9074,
+        "success_pct": 66.09130859375
+      },
+      {
+        "step": 9423,
+        "success_pct": 67.75390625
+      },
+      {
+        "step": 9772,
+        "success_pct": 68.77685546875
+      },
+      {
+        "step": 10121,
+        "success_pct": 69.8486328125
+      },
+      {
+        "step": 10470,
+        "success_pct": 71.0595703125
+      },
+      {
+        "step": 10819,
+        "success_pct": 72.25830078125
+      },
+      {
+        "step": 11168,
+        "success_pct": 72.7099609375
+      },
+      {
+        "step": 11517,
+        "success_pct": 73.62060546875
+      },
+      {
+        "step": 11866,
+        "success_pct": 74.93896484375
+      },
+      {
+        "step": 12215,
+        "success_pct": 76.3671875
+      },
+      {
+        "step": 12564,
+        "success_pct": 77.607421875
+      },
+      {
+        "step": 12913,
+        "success_pct": 78.5205078125
+      }
+    ]
+  }
+}

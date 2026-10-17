@@ -1,0 +1,125 @@
+{
+  "objects": [
+    {
+      "name": "box08",
+      "raw": {
+        "path": "data/references/raw/box08.h5",
+        "sha256": "e8bfe9aa29b0298ff870c403325063ea086c3fdd8830f6b8321c6a7ee57e5aef"
+      },
+      "contrack": {
+        "path": "data/references/contrack/box08.h5",
+        "sha256": "54a7217a74d587e2577b3a10aeb302d41e7f5672ca01b3b1fe4741b40dae23f6"
+      },
+      "motion": "data/references/raw/box08.h5"
+    },
+    {
+      "name": "pencil03",
+      "raw": {
+        "path": "data/references/raw/pencil03.h5",
+        "sha256": "7a94f160ce170aec088e93006c873f832d6b3f504cad476f430c5b9258189b67"
+      },
+      "contrack": {
+        "path": "data/references/contrack/pencil03.h5",
+        "sha256": "368cd9dc30a892706831c06f2f683f45260763efc485c575130855213e55b591"
+      },
+      "motion": "data/references/raw/pencil03.h5"
+    },
+    {
+      "name": "cylinder",
+      "raw": {
+        "path": "data/references/raw/cylinder.h5",
+        "sha256": "4563d331c95a995773f716e56666d47600fd40452b25f09d3b1b32f7cba41e23"
+      },
+      "contrack": {
+        "path": "data/references/contrack/cylinder.h5",
+        "sha256": "dd24e7678c90fde1fe2f76893556c8d335204f36eeca783a042a5695988f8750"
+      },
+      "motion": "data/references/raw/cylinder.h5"
+    },
+    {
+      "name": "flat_can",
+      "raw": {
+        "path": "data/references/raw/flat_can.h5",
+        "sha256": "137d9d9c75ecbfd7ca215b540060a87f789a72cf68f74808ed8896094d2cae1b"
+      },
+      "contrack": {
+        "path": "data/references/contrack/flat_can.h5",
+        "sha256": "3ce92c5085a4e6ec1b9e0a15f1fd4e6298e2228cced41e4d381b48b874666721"
+      },
+      "motion": "data/references/raw/flat_can.h5"
+    },
+    {
+      "name": "bottle",
+      "raw": {
+        "path": "data/references/raw/bottle.h5",
+        "sha256": "ef16cf066e1b8fe0285a50e0744540809585ab9348b22805b68ba8e8a5c7d889"
+      },
+      "contrack": {
+        "path": "data/references/contrack/bottle.h5",
+        "sha256": "38f1c9a19abe597a2746a3d9c4a6e8e174ec32b68bd09553fe1d7e01eef644da"
+      },
+      "motion": "data/references/raw/bottle.h5"
+    },
+    {
+      "name": "mug",
+      "raw": {
+        "path": "data/references/raw/mug.h5",
+        "sha256": "85edfcdc3654ad78849d09a142a18193043492277f880f1f51df99647510cf99"
+      },
+      "contrack": {
+        "path": "data/references/contrack/mug.h5",
+        "sha256": "669c379e40007b3be9925dd6f15a88e1b6d23eabfa0df9329c76397b39e7037c"
+      },
+      "motion": "data/references/raw/mug.h5"
+    },
+    {
+      "name": "tool",
+      "raw": {
+        "path": "data/references/raw/tool.h5",
+        "sha256": "2a02ccd53cb506c9963721ce964f4feb22d4007453c77e42ddede42df75a91bc"
+      },
+      "contrack": {
+        "path": "data/references/contrack/tool.h5",
+        "sha256": "65ef7f95f44c10e66bd5549fd774208de832913252b14bbf3464657163c8593c"
+      },
+      "motion": "data/references/raw/tool.h5"
+    },
+    {
+      "name": "banana-A",
+      "raw": {
+        "path": "data/references/raw/banana-A.h5",
+        "sha256": "5caf56b50b936411245cff2b5e682d9173f5439ab2cee280bf872264fade7cb8"
+      },
+      "contrack": {
+        "path": "data/references/contrack/banana-A.h5",
+        "sha256": "a289d05bb0b575c4ca6f0ffa6b3e790457738d9b8b8c6396fb1259bf2f01cd54"
+      },
+      "motion": "data/references/raw/banana-A.h5"
+    },
+    {
+      "name": "B09",
+      "raw": {
+        "path": "data/references/raw/B09.h5",
+        "sha256": "3d031f9e4bccf96d4aac31eef5bd9cd15c95fe86d448f8ae0759684fb88301de"
+      },
+      "contrack": {
+        "path": "data/references/contrack/B09.h5",
+        "sha256": "fbd95058e59c398e03e6dfbecd4b58e468a04f810830297b7f2d8f9acc21aa53"
+      },
+      "motion": "data/references/raw/B09.h5"
+    },
+    {
+      "name": "P02",
+      "raw": {
+        "path": "data/references/raw/P02.h5",
+        "sha256": "0a578d08fc91eadc982716d20cd66e1ba367c2a1100d06bb6b8ae503d4e386b7"
+      },
+      "contrack": {
+        "path": "data/references/contrack/P02.h5",
+        "sha256": "88ab81262c526287f313d6e5cd37d3a786d229d7b0422b7472a3430e051380ac"
+      },
+      "motion": "data/references/raw/P02.h5"
+    }
+  ],
+  "wrist_contract": "Use raw as shared external wrist motion in both experiments; do not substitute measured expert wrist."
+}

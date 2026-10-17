@@ -1,0 +1,22 @@
+[
+  {
+    "name": "BFM-Zero",
+    "commit": "318cf44a3262e5bdec5944f82f1a5f509b95d09b",
+    "origin": "https://github.com/LeCAR-Lab/BFM-Zero.git"
+  },
+  {
+    "name": "ConTrack",
+    "commit": "f5efe18e4b1f986566b252265c4bf63f3b67c6c6",
+    "origin": "https://github.com/EmptyBlueBox/ConTrack.git"
+  },
+  {
+    "name": "IsaacLab",
+    "commit": "42e61645c96bac08135566634785cdc87728d5ab",
+    "origin": "https://github.com/isaac-sim/IsaacLab.git"
+  },
+  {
+    "name": "GraspXL",
+    "commit": "53ab112d05c55712030af58c10a6055e6f3da36a",
+    "origin": "https://github.com/zdchan/GraspXL.git"
+  }
+]

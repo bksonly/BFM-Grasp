@@ -1,0 +1,82 @@
+{
+  "bfm_smoke": {
+    "steps": 8,
+    "elapsed_s": 5.538109565997729,
+    "transitions": 80,
+    "updates": 0,
+    "episodes": 0,
+    "retained_objects": 0,
+    "finite_metrics": true,
+    "initial_corner_error_m": 0.000215187668800354,
+    "skill_success_not_evaluated": true,
+    "metrics": {}
+  },
+  "bfm_warmup": {
+    "reset_checks": [
+      {
+        "stage": "refresh",
+        "max_speed_m_s": 0.08845715969800949,
+        "invalid_envs": 0
+      },
+      {
+        "stage": "refresh",
+        "max_speed_m_s": 0.09768285602331161,
+        "invalid_envs": 0
+      },
+      {
+        "stage": "validation",
+        "max_speed_m_s": 0.08845710009336472,
+        "invalid_envs": 0
+      },
+      {
+        "stage": "validation",
+        "max_speed_m_s": 0.09768296033143997,
+        "invalid_envs": 0
+      }
+    ],
+    "reset_protocol": "fixed_refresh2_validate2_v2",
+    "controller": "expert_absolute_pd",
+    "enabled": true,
+    "discarded_steps": 349,
+    "completed_envs": 10,
+    "full_reset": true,
+    "history_zero": true,
+    "last_action_zero": true,
+    "warmup_first_step_speed_gt_1m_s_by_group": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "model_buffers_unchanged": true,
+    "random_state_preserved": true,
+    "replay_entries": 0,
+    "training_updates": 0
+  },
+  "ppo_smoke": {
+    "iterations": 1,
+    "environments": 10,
+    "checkpoint_created": true
+  },
+  "note": "Integration checks only; no new performance claim.",
+  "graspxl_import": {
+    "object_id": "05e8724b174b437791f1ce6fe806b8da",
+    "motion": "sharpa_1",
+    "frames": 350,
+    "source_fps_assumption": 30,
+    "contact_generation_complete": true,
+    "sha256": "7c7d37941574a038869ba7746c0d7a8bcbc20cd1468f0b6922f7d16a0171d786"
+  },
+  "cpu_regression": [
+    "compact_replay",
+    "dr_defaults",
+    "scale_reference",
+    "actor_noise"
+  ]
+}

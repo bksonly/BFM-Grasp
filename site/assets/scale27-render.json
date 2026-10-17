@@ -1,0 +1,223 @@
+{
+  "renderer": "CPU mesh surface rasterization; full cached vertices/faces, flat lighting",
+  "object": "mug",
+  "camera": "orthographic, elevation25 azimuth-55; shared axis limits",
+  "variants": [
+    {
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "motion_sha256": "774779179a2eafb40dbd5fd2776e8ae64b2714f807377bfd6916f959ae4d18d0"
+    },
+    {
+      "scale": [
+        0.9,
+        0.9,
+        1.0
+      ],
+      "motion_sha256": "44d583f09b30982703b399eaba2c7b0ce47e275c4807c5c0da41938b80a06732"
+    },
+    {
+      "scale": [
+        0.9,
+        0.9,
+        1.1
+      ],
+      "motion_sha256": "d60c435d1e875666a4d3c2d45171cf6dad4d0d0b2123195343c95bfd2fc4a298"
+    },
+    {
+      "scale": [
+        0.9,
+        1.0,
+        0.9
+      ],
+      "motion_sha256": "ab6762b3dbbae71719ee304b9a05e4d7698cbc72be570dc547395417c18ff6a6"
+    },
+    {
+      "scale": [
+        0.9,
+        1.0,
+        1.0
+      ],
+      "motion_sha256": "b5dbddc272e67fef6928e72c98be04106a0101a66abed95d9ff23cea326ada72"
+    },
+    {
+      "scale": [
+        0.9,
+        1.0,
+        1.1
+      ],
+      "motion_sha256": "6edecefa675fb1ad7d0dfe7844c94bac78d3763f81ef19ab79bfb7872ff96ff0"
+    },
+    {
+      "scale": [
+        0.9,
+        1.1,
+        0.9
+      ],
+      "motion_sha256": "52204f1e13850febca60bd9de2ab8a2e54bc72f5f85c843c4a15edeef8cc99ee"
+    },
+    {
+      "scale": [
+        0.9,
+        1.1,
+        1.0
+      ],
+      "motion_sha256": "31a3cb8809effc0735438624b20f0fc4c6bf5328abcca2ef02a5276709cb8ac3"
+    },
+    {
+      "scale": [
+        0.9,
+        1.1,
+        1.1
+      ],
+      "motion_sha256": "47e82670638150f1532b8fd5469afb2615a1aee88265c30b91acbd17021b36a5"
+    },
+    {
+      "scale": [
+        1.0,
+        0.9,
+        0.9
+      ],
+      "motion_sha256": "e6e66a5203bf25a62a4a3ec3a151e403044f575c1b6cb0c034af43f9ca7e8ab2"
+    },
+    {
+      "scale": [
+        1.0,
+        0.9,
+        1.0
+      ],
+      "motion_sha256": "de23ee57daa49b421f6407faf0db3de0cf28314674a9641f5d1f4d78b060ce6f"
+    },
+    {
+      "scale": [
+        1.0,
+        0.9,
+        1.1
+      ],
+      "motion_sha256": "e1d3805050c28301e1f5f5041b49c0fc1a4afa1503a4802ae2da78680a57ef0b"
+    },
+    {
+      "scale": [
+        1.0,
+        1.0,
+        0.9
+      ],
+      "motion_sha256": "e27eb2cd3b4cbebff2992dd977eb1be552af73bf3878b76b27c93ce7b9e84742"
+    },
+    {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "motion_sha256": "85edfcdc3654ad78849d09a142a18193043492277f880f1f51df99647510cf99"
+    },
+    {
+      "scale": [
+        1.0,
+        1.0,
+        1.1
+      ],
+      "motion_sha256": "7fef5b4f45f5114ea54f47b98758d9c55f7696bf2f4b8ad729c102b022230e71"
+    },
+    {
+      "scale": [
+        1.0,
+        1.1,
+        0.9
+      ],
+      "motion_sha256": "1aa0c91d996e6c957c9b1d1d335803c7cf13b5fe0cc569d8f067659ab65b4fae"
+    },
+    {
+      "scale": [
+        1.0,
+        1.1,
+        1.0
+      ],
+      "motion_sha256": "814e35e5efec08881dcb37b0eb02eda3ebbf5c99f4bdff15dc61e597f216f8bb"
+    },
+    {
+      "scale": [
+        1.0,
+        1.1,
+        1.1
+      ],
+      "motion_sha256": "56874545ded007c4d62e6aa7a39afc983d97a72f8a3a6bcd2c251badcac8b322"
+    },
+    {
+      "scale": [
+        1.1,
+        0.9,
+        0.9
+      ],
+      "motion_sha256": "ec54146e1b4fa0c436b4171624b20f1bb37c812bdb759bd7e8274f314c3d6d80"
+    },
+    {
+      "scale": [
+        1.1,
+        0.9,
+        1.0
+      ],
+      "motion_sha256": "6a2d512fac690fdc8e47f68e7fd85d794bacece47e128450c5c87f8e5f389741"
+    },
+    {
+      "scale": [
+        1.1,
+        0.9,
+        1.1
+      ],
+      "motion_sha256": "791455c5b4a3c0eb9b8e53adddf57a4f6b1c295d5bdf41422e0232c1a0d9ff1a"
+    },
+    {
+      "scale": [
+        1.1,
+        1.0,
+        0.9
+      ],
+      "motion_sha256": "9452c08f511f7bf6fad0c9bb4592d4e0b690ca70c16d81ded8872b0fc0553ab0"
+    },
+    {
+      "scale": [
+        1.1,
+        1.0,
+        1.0
+      ],
+      "motion_sha256": "e2d8b8d6d26838916f9340e4fc2404fe17afc206271ff4aaffeff4553bba01c7"
+    },
+    {
+      "scale": [
+        1.1,
+        1.0,
+        1.1
+      ],
+      "motion_sha256": "cd15bfa6d2b77c1228473253143a75059cad347ba7c2c0b7dccedc644a49043b"
+    },
+    {
+      "scale": [
+        1.1,
+        1.1,
+        0.9
+      ],
+      "motion_sha256": "f52ad5464264ea676eb6d6b3ceb95e66a6f2d5782809e640723005ad6d835e83"
+    },
+    {
+      "scale": [
+        1.1,
+        1.1,
+        1.0
+      ],
+      "motion_sha256": "a9551c3977949cc9523505d906d3ded094ec7b52be0c3f6874a8cf8fad2f2eee"
+    },
+    {
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "motion_sha256": "6f7b5150a39616861b7a75ecc387cca55dc86bf71564de36cbcfa8e70b5bd015"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "assets/sharpa/rby1a_sharpa_tactile.urdf",
+      "sha256": "de5c0b814d8fa0d696b17409ba1d33033ef891058361a7a314bf8fa3e5a0548c"
+    },
+    {
+      "path": "assets/sharpa/rby1a_sharpa_tactile.usd",
+      "sha256": "043f5e22044d7267fccc1a21ce879293e3f3c999e364637a142b64d17543c8e6"
+    },
+    {
+      "path": "assets/sharpa/joint_order.json",
+      "sha256": "6bdf346e93624fdffecbe896d910f535a2ab3f863a57ffb983107c18a4e4f06e"
+    },
+    {
+      "path": "assets/sharpa/configuration/rby1a_sharpa_tactile_sensor.usd",
+      "sha256": "ac21e5618dc0f58aa58e23c11d689eb6e9eb02f7576244c70032236bec90a3c9"
+    },
+    {
+      "path": "assets/sharpa/configuration/rby1a_sharpa_tactile_physics.usd",
+      "sha256": "854c6369e54461d6a09dfe28e3c99f477aeaec487f49edfd6d1a6fd49473543b"
+    },
+    {
+      "path": "assets/sharpa/configuration/rby1a_sharpa_tactile_base.usd",
+      "sha256": "e549151c36ede3a418f0c09ca23266c6df0aac498806da5596e001fc02b92ba6"
+    },
+    {
+      "path": "assets/sharpa/configuration/rby1a_sharpa_tactile_robot.usd",
+      "sha256": "dae9d7b127d8de0c96a690579af1f68076ced3e0414dc700ad46163549cc852e"
+    }
+  ],
+  "builtin_shader_dependency": "OmniPBR.mdl is supplied by Isaac Sim, not an external project asset."
+}

@@ -1,0 +1,190 @@
+{
+  "raw": {
+    "last": {
+      "successes": 2369,
+      "count": 2560,
+      "per_object": {
+        "box08": {
+          "successes": 256,
+          "count": 256
+        },
+        "pencil03": {
+          "successes": 256,
+          "count": 256
+        },
+        "cylinder": {
+          "successes": 256,
+          "count": 256
+        },
+        "flat_can": {
+          "successes": 250,
+          "count": 256
+        },
+        "bottle": {
+          "successes": 229,
+          "count": 256
+        },
+        "mug": {
+          "successes": 253,
+          "count": 256
+        },
+        "tool": {
+          "successes": 256,
+          "count": 256
+        },
+        "banana-A": {
+          "successes": 256,
+          "count": 256
+        },
+        "B09": {
+          "successes": 227,
+          "count": 256
+        },
+        "P02": {
+          "successes": 130,
+          "count": 256
+        }
+      }
+    },
+    "best": {
+      "successes": 2461,
+      "count": 2560,
+      "per_object": {
+        "box08": {
+          "successes": 256,
+          "count": 256
+        },
+        "pencil03": {
+          "successes": 255,
+          "count": 256
+        },
+        "cylinder": {
+          "successes": 256,
+          "count": 256
+        },
+        "flat_can": {
+          "successes": 248,
+          "count": 256
+        },
+        "bottle": {
+          "successes": 229,
+          "count": 256
+        },
+        "mug": {
+          "successes": 254,
+          "count": 256
+        },
+        "tool": {
+          "successes": 250,
+          "count": 256
+        },
+        "banana-A": {
+          "successes": 255,
+          "count": 256
+        },
+        "B09": {
+          "successes": 255,
+          "count": 256
+        },
+        "P02": {
+          "successes": 203,
+          "count": 256
+        }
+      }
+    }
+  },
+  "contrack": {
+    "last": {
+      "successes": 2492,
+      "count": 2560,
+      "per_object": {
+        "box08": {
+          "successes": 256,
+          "count": 256
+        },
+        "pencil03": {
+          "successes": 244,
+          "count": 256
+        },
+        "cylinder": {
+          "successes": 256,
+          "count": 256
+        },
+        "flat_can": {
+          "successes": 254,
+          "count": 256
+        },
+        "bottle": {
+          "successes": 239,
+          "count": 256
+        },
+        "mug": {
+          "successes": 253,
+          "count": 256
+        },
+        "tool": {
+          "successes": 228,
+          "count": 256
+        },
+        "banana-A": {
+          "successes": 256,
+          "count": 256
+        },
+        "B09": {
+          "successes": 251,
+          "count": 256
+        },
+        "P02": {
+          "successes": 255,
+          "count": 256
+        }
+      }
+    },
+    "best": {
+      "successes": 2461,
+      "count": 2560,
+      "per_object": {
+        "box08": {
+          "successes": 256,
+          "count": 256
+        },
+        "pencil03": {
+          "successes": 242,
+          "count": 256
+        },
+        "cylinder": {
+          "successes": 256,
+          "count": 256
+        },
+        "flat_can": {
+          "successes": 254,
+          "count": 256
+        },
+        "bottle": {
+          "successes": 239,
+          "count": 256
+        },
+        "mug": {
+          "successes": 253,
+          "count": 256
+        },
+        "tool": {
+          "successes": 206,
+          "count": 256
+        },
+        "banana-A": {
+          "successes": 248,
+          "count": 256
+        },
+        "B09": {
+          "successes": 252,
+          "count": 256
+        },
+        "P02": {
+          "successes": 255,
+          "count": 256
+        }
+      }
+    }
+  }
+}
