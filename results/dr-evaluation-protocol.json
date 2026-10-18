@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "checkpoint_selection": "Both gracefully stopped final checkpoints; not cherry-picked evaluation checkpoints",
+  "original_code_parity": {
+    "resume": "2700 complete episode records identical",
+    "scratch": "2700 complete episode records identical",
+    "frozen_model_cpu_max_absolute_error": 0.0
+  },
+  "reset_audit": {
+    "trigger": "Uniform 1.15 scale, bowl environment 688",
+    "fixed_same_initial_state_probe_max_speeds": [
+      4.727124691,
+      0.92907393,
+      1.240832806,
+      0.16350019,
+      0.141590253,
+      0.1635001,
+      0.117698342,
+      0.117698342
+    ],
+    "change": "Fixed four refresh steps followed by two validation steps; restore same sampled initial state; no resampling; unchanged finite and <=1m/s criterion",
+    "scored_diagnostic": false
+  },
+  "held_out_shapes": {
+    "selected_before_policy_evaluation": true,
+    "classes": [
+      "Cylindrical can",
+      "Bottle",
+      "Mug",
+      "Banana",
+      "Bowl"
+    ],
+    "size_normalization": "Uniform scale to match canonical maximum extent; center aligned in object-local frame; physical initial pose DR unchanged",
+    "mesh_choices": {
+      "mug": "c25119c5ac6e4654be3b75d78e34a912",
+      "banana-A": "501287dfbce54bae986b31d1f364b281",
+      "bottle": "f51306c13cd14d38bdcd7a31d8804bfb"
+    },
+    "all_trials_included": true
+  },
+  "limitations": [
+    "One training seed per condition",
+    "Same-category mesh sample contains only one new mesh per tested class",
+    "The revised reset protocol changes only discarded physics warmup; subsequent results identify protocol explicitly",
+    "No CaP task result is available yet"
+  ]
+}

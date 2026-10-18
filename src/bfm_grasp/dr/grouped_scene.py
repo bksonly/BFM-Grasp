@@ -9,9 +9,10 @@ from ConTrack.tasks.manager_based.mimic_rby1a_sharpa.mdp.state import reset_refe
 MODULES=[]
 PATHS=[]
 SCALE_CLASSES=0
+VARIANTS_PER_CLASS=27
 
 def asset_index(index):
-    return (index%SCALE_CLASSES)*27+(index//SCALE_CLASSES)%27 if SCALE_CLASSES else index%len(MODULES)
+    return (index%SCALE_CLASSES)*VARIANTS_PER_CLASS+(index//SCALE_CLASSES)%VARIANTS_PER_CLASS if SCALE_CLASSES else index%len(MODULES)
 
 def spawn_objects(prim_path,cfg,translation=None,orientation=None,**kwargs):
     parents=sim.find_matching_prim_paths(prim_path.rsplit('/',1)[0])
@@ -30,9 +31,10 @@ def spawn_tables(prim_path,cfg,translation=None,orientation=None,**kwargs):
     return sim.get_current_stage().GetPrimAtPath(parents[0]+'/ReferenceTable')
 
 def configure(cfg,paths):
-    global PATHS,SCALE_CLASSES
+    global PATHS,SCALE_CLASSES,VARIANTS_PER_CLASS
     PATHS=paths
-    SCALE_CLASSES=len(paths)//27 if getattr(cfg,'scale_dr',False) else 0
+    VARIANTS_PER_CLASS=getattr(cfg,'scale_variants_per_class',27)
+    SCALE_CLASSES=len(paths)//VARIANTS_PER_CLASS if getattr(cfg,'scale_dr',False) else 0
     file=Path(str(__import__('pathlib').Path(__file__).resolve().parents[3]/'third_party'/'ConTrack/source/ConTrack/ConTrack/tasks/manager_based/mimic_rby1a_sharpa/rby1a_sharpa_env_cfg.py'))
     original=os.environ['CONTRACK_RBY1A_SHARPA_DATA']
     for i,path in enumerate(paths):

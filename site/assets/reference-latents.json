@@ -1,0 +1,69 @@
+{
+  "checkpoint": "/home/zzy/CraftNet/logs/bfm-dr-scale27-resume-v1/train/checkpoint.pt",
+  "checkpoint_step": 11528,
+  "references": [
+    {
+      "path": "/home/zzy/CraftNet/logs/box08-contrack-contacts10-v2/expert.h5",
+      "sha256": "54a7217a74d587e2577b3a10aeb302d41e7f5672ca01b3b1fe4741b40dae23f6"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/pencil03-contrack-contacts10-v2/expert.h5",
+      "sha256": "368cd9dc30a892706831c06f2f683f45260763efc485c575130855213e55b591"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/cylinder/expert.h5",
+      "sha256": "dd24e7678c90fde1fe2f76893556c8d335204f36eeca783a042a5695988f8750"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/flat_can/expert.h5",
+      "sha256": "3ce92c5085a4e6ec1b9e0a15f1fd4e6298e2228cced41e4d381b48b874666721"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/bottle/expert.h5",
+      "sha256": "38f1c9a19abe597a2746a3d9c4a6e8e174ec32b68bd09553fe1d7e01eef644da"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/mug/expert.h5",
+      "sha256": "669c379e40007b3be9925dd6f15a88e1b6d23eabfa0df9329c76397b39e7037c"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/tool/expert.h5",
+      "sha256": "65ef7f95f44c10e66bd5549fd774208de832913252b14bbf3464657163c8593c"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/banana-A/expert.h5",
+      "sha256": "a289d05bb0b575c4ca6f0ffa6b3e790457738d9b8b8c6396fb1259bf2f01cd54"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/B09/expert.h5",
+      "sha256": "fbd95058e59c398e03e6dfbecd4b58e468a04f810830297b7f2d8f9acc21aa53"
+    },
+    {
+      "path": "/home/zzy/CraftNet/logs/contrack-expansion10-v1/P02/expert.h5",
+      "sha256": "88ab81262c526287f313d6e5cd37d3a786d229d7b0422b7472a3430e051380ac"
+    }
+  ],
+  "names": [
+    "Box",
+    "Pencil",
+    "Cylindrical can",
+    "Flat can",
+    "Bottle",
+    "Mug",
+    "Hammer",
+    "Banana",
+    "Bowl",
+    "Plate"
+  ],
+  "points": 1170,
+  "window": 8,
+  "stride": 3,
+  "tsne": {
+    "perplexity": 30,
+    "seed": 42,
+    "iterations": 1500,
+    "init": "pca",
+    "learning_rate": "auto"
+  },
+  "interpretation": "Each point is one time-window context from one of ten canonical trajectories, not an independent grasp trial. 2D separation alone does not establish generalization."
+}

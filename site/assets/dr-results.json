@@ -1,0 +1,1031 @@
+{
+  "training": {
+    "resume": {
+      "curve": [
+        {
+          "step": 349,
+          "percent": 16.861310958862305
+        },
+        {
+          "step": 698,
+          "percent": 37.52295684814453
+        },
+        {
+          "step": 1047,
+          "percent": 41.355491638183594
+        },
+        {
+          "step": 1396,
+          "percent": 51.54597091674805
+        },
+        {
+          "step": 1745,
+          "percent": 57.51300811767578
+        },
+        {
+          "step": 2094,
+          "percent": 61.923282623291016
+        },
+        {
+          "step": 2443,
+          "percent": 64.6833724975586
+        },
+        {
+          "step": 2792,
+          "percent": 67.20555114746094
+        },
+        {
+          "step": 3141,
+          "percent": 67.75702667236328
+        },
+        {
+          "step": 3490,
+          "percent": 69.3406753540039
+        },
+        {
+          "step": 3839,
+          "percent": 70.76083374023438
+        },
+        {
+          "step": 4188,
+          "percent": 71.87496185302734
+        },
+        {
+          "step": 4537,
+          "percent": 72.92259979248047
+        },
+        {
+          "step": 4886,
+          "percent": 74.00206756591797
+        },
+        {
+          "step": 5235,
+          "percent": 74.84953308105469
+        },
+        {
+          "step": 5584,
+          "percent": 75.60313415527344
+        },
+        {
+          "step": 5933,
+          "percent": 76.17901611328125
+        },
+        {
+          "step": 6282,
+          "percent": 76.38538360595703
+        },
+        {
+          "step": 6631,
+          "percent": 74.84742736816406
+        },
+        {
+          "step": 6980,
+          "percent": 73.16703033447266
+        },
+        {
+          "step": 7329,
+          "percent": 75.83984375
+        },
+        {
+          "step": 7678,
+          "percent": 77.2509765625
+        },
+        {
+          "step": 8027,
+          "percent": 79.22607421875
+        },
+        {
+          "step": 8376,
+          "percent": 79.17724609375
+        },
+        {
+          "step": 8725,
+          "percent": 79.4091796875
+        },
+        {
+          "step": 9074,
+          "percent": 79.2578125
+        },
+        {
+          "step": 9423,
+          "percent": 79.658203125
+        },
+        {
+          "step": 9772,
+          "percent": 79.95849609375
+        },
+        {
+          "step": 10121,
+          "percent": 80.791015625
+        },
+        {
+          "step": 10470,
+          "percent": 81.22802734375
+        },
+        {
+          "step": 10819,
+          "percent": 81.6015625
+        },
+        {
+          "step": 11168,
+          "percent": 82.0703125
+        },
+        {
+          "step": 11517,
+          "percent": 82.392578125
+        }
+      ],
+      "best": {
+        "metric": "reference_z_rolling_macro",
+        "macro_rate": 0.82392578125,
+        "per_object_rate": {
+          "0": 0.755859375,
+          "1": 0.955322265625,
+          "2": 0.8974609375,
+          "3": 0.744873046875,
+          "4": 0.715576171875,
+          "5": 0.905029296875,
+          "6": 0.6005859375,
+          "7": 0.928955078125,
+          "8": 0.906005859375,
+          "9": 0.82958984375
+        },
+        "rolling_counts": {
+          "0": 4096,
+          "1": 4096,
+          "2": 4096,
+          "3": 4096,
+          "4": 4096,
+          "5": 4096,
+          "6": 4096,
+          "7": 4096,
+          "8": 4096,
+          "9": 4096
+        },
+        "episode_counts": {
+          "0": 6765,
+          "1": 6765,
+          "2": 6765,
+          "3": 6765,
+          "4": 6765,
+          "5": 6765,
+          "6": 6732,
+          "7": 6732,
+          "8": 6732,
+          "9": 6732
+        },
+        "object_names": {
+          "0": "box08",
+          "1": "pencil03",
+          "2": "cylinder",
+          "3": "flat_can",
+          "4": "bottle",
+          "5": "mug",
+          "6": "tool",
+          "7": "banana-A",
+          "8": "B09",
+          "9": "P02"
+        },
+        "step": 11517,
+        "total_updates": 373456
+      }
+    },
+    "scratch": {
+      "curve": [
+        {
+          "step": 349,
+          "percent": 9.08847427368164
+        },
+        {
+          "step": 698,
+          "percent": 23.39179801940918
+        },
+        {
+          "step": 1047,
+          "percent": 32.57683563232422
+        },
+        {
+          "step": 1396,
+          "percent": 36.78401565551758
+        },
+        {
+          "step": 1745,
+          "percent": 40.10248565673828
+        },
+        {
+          "step": 2094,
+          "percent": 44.24637222290039
+        },
+        {
+          "step": 2443,
+          "percent": 46.934104919433594
+        },
+        {
+          "step": 2792,
+          "percent": 48.498504638671875
+        },
+        {
+          "step": 3141,
+          "percent": 49.4607048034668
+        },
+        {
+          "step": 3490,
+          "percent": 50.1994514465332
+        },
+        {
+          "step": 3839,
+          "percent": 51.49819564819336
+        },
+        {
+          "step": 4188,
+          "percent": 52.54804229736328
+        },
+        {
+          "step": 4537,
+          "percent": 53.89993667602539
+        },
+        {
+          "step": 4886,
+          "percent": 54.897281646728516
+        },
+        {
+          "step": 5235,
+          "percent": 56.194881439208984
+        },
+        {
+          "step": 5584,
+          "percent": 57.55015563964844
+        },
+        {
+          "step": 5933,
+          "percent": 58.40950012207031
+        },
+        {
+          "step": 6282,
+          "percent": 59.52699279785156
+        },
+        {
+          "step": 6631,
+          "percent": 60.429222106933594
+        },
+        {
+          "step": 6980,
+          "percent": 61.09043884277344
+        },
+        {
+          "step": 7329,
+          "percent": 64.4677734375
+        },
+        {
+          "step": 7678,
+          "percent": 66.48681640625
+        },
+        {
+          "step": 8027,
+          "percent": 67.82958984375
+        },
+        {
+          "step": 8376,
+          "percent": 69.150390625
+        },
+        {
+          "step": 8725,
+          "percent": 70.7080078125
+        },
+        {
+          "step": 9074,
+          "percent": 71.15966796875
+        },
+        {
+          "step": 9423,
+          "percent": 72.0166015625
+        },
+        {
+          "step": 9772,
+          "percent": 73.31298828125
+        },
+        {
+          "step": 10121,
+          "percent": 74.482421875
+        },
+        {
+          "step": 10470,
+          "percent": 75.0830078125
+        },
+        {
+          "step": 10819,
+          "percent": 75.81787109375
+        },
+        {
+          "step": 11168,
+          "percent": 76.8505859375
+        },
+        {
+          "step": 11517,
+          "percent": 77.40234375
+        },
+        {
+          "step": 11866,
+          "percent": 78.1982421875
+        },
+        {
+          "step": 12215,
+          "percent": 78.65234375
+        }
+      ],
+      "best": {
+        "metric": "reference_z_rolling_macro",
+        "macro_rate": 0.7865234375,
+        "per_object_rate": {
+          "0": 0.709228515625,
+          "1": 0.675537109375,
+          "2": 0.806396484375,
+          "3": 0.563232421875,
+          "4": 0.750244140625,
+          "5": 0.8798828125,
+          "6": 0.736083984375,
+          "7": 0.889892578125,
+          "8": 0.928466796875,
+          "9": 0.92626953125
+        },
+        "rolling_counts": {
+          "0": 4096,
+          "1": 4096,
+          "2": 4096,
+          "3": 4096,
+          "4": 4096,
+          "5": 4096,
+          "6": 4096,
+          "7": 4096,
+          "8": 4096,
+          "9": 4096
+        },
+        "episode_counts": {
+          "0": 7175,
+          "1": 7175,
+          "2": 7175,
+          "3": 7175,
+          "4": 7175,
+          "5": 7175,
+          "6": 7140,
+          "7": 7140,
+          "8": 7140,
+          "9": 7140
+        },
+        "object_names": {
+          "0": "box08",
+          "1": "pencil03",
+          "2": "cylinder",
+          "3": "flat_can",
+          "4": "bottle",
+          "5": "mug",
+          "6": "tool",
+          "7": "banana-A",
+          "8": "B09",
+          "9": "P02"
+        },
+        "step": 12215,
+        "total_updates": 195376
+      }
+    }
+  },
+  "evaluation": {
+    "resume": {
+      "successes": 2522,
+      "count": 2700,
+      "percent": 93.4074074074074,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 231,
+          "count": 270
+        },
+        {
+          "class_id": 1,
+          "successes": 267,
+          "count": 270
+        },
+        {
+          "class_id": 2,
+          "successes": 270,
+          "count": 270
+        },
+        {
+          "class_id": 3,
+          "successes": 218,
+          "count": 270
+        },
+        {
+          "class_id": 4,
+          "successes": 246,
+          "count": 270
+        },
+        {
+          "class_id": 5,
+          "successes": 257,
+          "count": 270
+        },
+        {
+          "class_id": 6,
+          "successes": 261,
+          "count": 270
+        },
+        {
+          "class_id": 7,
+          "successes": 268,
+          "count": 270
+        },
+        {
+          "class_id": 8,
+          "successes": 241,
+          "count": 270
+        },
+        {
+          "class_id": 9,
+          "successes": 263,
+          "count": 270
+        }
+      ]
+    },
+    "resume-original": {
+      "successes": 2522,
+      "count": 2700,
+      "percent": 93.4074074074074,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 231,
+          "count": 270
+        },
+        {
+          "class_id": 1,
+          "successes": 267,
+          "count": 270
+        },
+        {
+          "class_id": 2,
+          "successes": 270,
+          "count": 270
+        },
+        {
+          "class_id": 3,
+          "successes": 218,
+          "count": 270
+        },
+        {
+          "class_id": 4,
+          "successes": 246,
+          "count": 270
+        },
+        {
+          "class_id": 5,
+          "successes": 257,
+          "count": 270
+        },
+        {
+          "class_id": 6,
+          "successes": 261,
+          "count": 270
+        },
+        {
+          "class_id": 7,
+          "successes": 268,
+          "count": 270
+        },
+        {
+          "class_id": 8,
+          "successes": 241,
+          "count": 270
+        },
+        {
+          "class_id": 9,
+          "successes": 263,
+          "count": 270
+        }
+      ]
+    },
+    "scratch-original": {
+      "successes": 2271,
+      "count": 2700,
+      "percent": 84.11111111111111,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 224,
+          "count": 270
+        },
+        {
+          "class_id": 1,
+          "successes": 261,
+          "count": 270
+        },
+        {
+          "class_id": 2,
+          "successes": 179,
+          "count": 270
+        },
+        {
+          "class_id": 3,
+          "successes": 179,
+          "count": 270
+        },
+        {
+          "class_id": 4,
+          "successes": 181,
+          "count": 270
+        },
+        {
+          "class_id": 5,
+          "successes": 245,
+          "count": 270
+        },
+        {
+          "class_id": 6,
+          "successes": 227,
+          "count": 270
+        },
+        {
+          "class_id": 7,
+          "successes": 257,
+          "count": 270
+        },
+        {
+          "class_id": 8,
+          "successes": 258,
+          "count": 270
+        },
+        {
+          "class_id": 9,
+          "successes": 260,
+          "count": 270
+        }
+      ]
+    },
+    "scratch-repeat": {
+      "successes": 2271,
+      "count": 2700,
+      "percent": 84.11111111111111,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 224,
+          "count": 270
+        },
+        {
+          "class_id": 1,
+          "successes": 261,
+          "count": 270
+        },
+        {
+          "class_id": 2,
+          "successes": 179,
+          "count": 270
+        },
+        {
+          "class_id": 3,
+          "successes": 179,
+          "count": 270
+        },
+        {
+          "class_id": 4,
+          "successes": 181,
+          "count": 270
+        },
+        {
+          "class_id": 5,
+          "successes": 245,
+          "count": 270
+        },
+        {
+          "class_id": 6,
+          "successes": 227,
+          "count": 270
+        },
+        {
+          "class_id": 7,
+          "successes": 257,
+          "count": 270
+        },
+        {
+          "class_id": 8,
+          "successes": 258,
+          "count": 270
+        },
+        {
+          "class_id": 9,
+          "successes": 260,
+          "count": 270
+        }
+      ]
+    },
+    "scale-1.1": {
+      "successes": 935,
+      "count": 1000,
+      "percent": 93.5,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 66,
+          "count": 100
+        },
+        {
+          "class_id": 1,
+          "successes": 99,
+          "count": 100
+        },
+        {
+          "class_id": 2,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 3,
+          "successes": 97,
+          "count": 100
+        },
+        {
+          "class_id": 4,
+          "successes": 90,
+          "count": 100
+        },
+        {
+          "class_id": 5,
+          "successes": 91,
+          "count": 100
+        },
+        {
+          "class_id": 6,
+          "successes": 99,
+          "count": 100
+        },
+        {
+          "class_id": 7,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 8,
+          "successes": 96,
+          "count": 100
+        },
+        {
+          "class_id": 9,
+          "successes": 97,
+          "count": 100
+        }
+      ]
+    },
+    "scale-1.05-diagnostic": {
+      "successes": 973,
+      "count": 1000,
+      "percent": 97.3,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 94,
+          "count": 100
+        },
+        {
+          "class_id": 1,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 2,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 3,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 4,
+          "successes": 93,
+          "count": 100
+        },
+        {
+          "class_id": 5,
+          "successes": 98,
+          "count": 100
+        },
+        {
+          "class_id": 6,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 7,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 8,
+          "successes": 90,
+          "count": 100
+        },
+        {
+          "class_id": 9,
+          "successes": 98,
+          "count": 100
+        }
+      ]
+    },
+    "scale-1.15-refresh4": {
+      "successes": 884,
+      "count": 1000,
+      "percent": 88.4,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 48,
+          "count": 100
+        },
+        {
+          "class_id": 1,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 2,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 3,
+          "successes": 97,
+          "count": 100
+        },
+        {
+          "class_id": 4,
+          "successes": 96,
+          "count": 100
+        },
+        {
+          "class_id": 5,
+          "successes": 87,
+          "count": 100
+        },
+        {
+          "class_id": 6,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 7,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 8,
+          "successes": 61,
+          "count": 100
+        },
+        {
+          "class_id": 9,
+          "successes": 95,
+          "count": 100
+        }
+      ]
+    },
+    "unseen-shapes": {
+      "successes": 890,
+      "count": 1000,
+      "percent": 89.0,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 96,
+          "count": 100
+        },
+        {
+          "class_id": 1,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 2,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 3,
+          "successes": 98,
+          "count": 100
+        },
+        {
+          "class_id": 4,
+          "successes": 99,
+          "count": 100
+        },
+        {
+          "class_id": 5,
+          "successes": 99,
+          "count": 100
+        },
+        {
+          "class_id": 6,
+          "successes": 99,
+          "count": 100
+        },
+        {
+          "class_id": 7,
+          "successes": 4,
+          "count": 100
+        },
+        {
+          "class_id": 8,
+          "successes": 98,
+          "count": 100
+        },
+        {
+          "class_id": 9,
+          "successes": 97,
+          "count": 100
+        }
+      ]
+    },
+    "resume-rollout-embeddings": {
+      "successes": 2523,
+      "count": 2700,
+      "percent": 93.44444444444444,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 234,
+          "count": 270
+        },
+        {
+          "class_id": 1,
+          "successes": 264,
+          "count": 270
+        },
+        {
+          "class_id": 2,
+          "successes": 269,
+          "count": 270
+        },
+        {
+          "class_id": 3,
+          "successes": 218,
+          "count": 270
+        },
+        {
+          "class_id": 4,
+          "successes": 241,
+          "count": 270
+        },
+        {
+          "class_id": 5,
+          "successes": 254,
+          "count": 270
+        },
+        {
+          "class_id": 6,
+          "successes": 261,
+          "count": 270
+        },
+        {
+          "class_id": 7,
+          "successes": 270,
+          "count": 270
+        },
+        {
+          "class_id": 8,
+          "successes": 248,
+          "count": 270
+        },
+        {
+          "class_id": 9,
+          "successes": 264,
+          "count": 270
+        }
+      ]
+    },
+    "scratch-refresh4": {
+      "successes": 2268,
+      "count": 2700,
+      "percent": 84.0,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 214,
+          "count": 270
+        },
+        {
+          "class_id": 1,
+          "successes": 255,
+          "count": 270
+        },
+        {
+          "class_id": 2,
+          "successes": 183,
+          "count": 270
+        },
+        {
+          "class_id": 3,
+          "successes": 180,
+          "count": 270
+        },
+        {
+          "class_id": 4,
+          "successes": 186,
+          "count": 270
+        },
+        {
+          "class_id": 5,
+          "successes": 248,
+          "count": 270
+        },
+        {
+          "class_id": 6,
+          "successes": 223,
+          "count": 270
+        },
+        {
+          "class_id": 7,
+          "successes": 265,
+          "count": 270
+        },
+        {
+          "class_id": 8,
+          "successes": 259,
+          "count": 270
+        },
+        {
+          "class_id": 9,
+          "successes": 255,
+          "count": 270
+        }
+      ]
+    },
+    "scale-1.1-refresh4": {
+      "successes": 938,
+      "count": 1000,
+      "percent": 93.8,
+      "per_class": [
+        {
+          "class_id": 0,
+          "successes": 66,
+          "count": 100
+        },
+        {
+          "class_id": 1,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 2,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 3,
+          "successes": 98,
+          "count": 100
+        },
+        {
+          "class_id": 4,
+          "successes": 92,
+          "count": 100
+        },
+        {
+          "class_id": 5,
+          "successes": 92,
+          "count": 100
+        },
+        {
+          "class_id": 6,
+          "successes": 99,
+          "count": 100
+        },
+        {
+          "class_id": 7,
+          "successes": 100,
+          "count": 100
+        },
+        {
+          "class_id": 8,
+          "successes": 94,
+          "count": 100
+        },
+        {
+          "class_id": 9,
+          "successes": 97,
+          "count": 100
+        }
+      ]
+    }
+  },
+  "parity": {
+    "frozen_model_max_absolute_error": 0.0,
+    "resume_all_episode_records_identical": true,
+    "scratch_all_episode_records_identical": true
+  },
+  "limitations": [
+    "One trained seed per condition.",
+    "Seen geometry evaluation includes all training DR; held-out scale and new mesh tests are separate.",
+    "The first organized scratch evaluation aborted before scoring due to one reset speed validation failure; this attempt is retained. No threshold was relaxed."
+  ]
+}

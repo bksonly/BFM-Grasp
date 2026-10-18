@@ -93,9 +93,10 @@ class HandOnlyAction(ActionTerm):
 def initialize(env):
     if hasattr(env,'hand_motion'):return
     index=torch.arange(env.num_envs,device=env.device)
-    classes=len(PATHS)//27
-    env.group_id=(index%classes)*27+(index//classes)%27 if getattr(env.cfg,'scale_dr',False) else index%len(PATHS)
-    env.class_id=env.group_id//27 if getattr(env.cfg,'scale_dr',False) else env.group_id
+    variants=getattr(env.cfg,'scale_variants_per_class',27)
+    classes=len(PATHS)//variants
+    env.group_id=(index%classes)*variants+(index//classes)%variants if getattr(env.cfg,'scale_dr',False) else index%len(PATHS)
+    env.class_id=env.group_id//variants if getattr(env.cfg,'scale_dr',False) else env.group_id
     env.variant_id=env.group_id.clone()
     env.hand_wrist_twist=torch.zeros((env.num_envs,6),device=env.device)
     env.group_vertices=[];env.group_table=[];env.hand_motion=[];env.hand_objects=[];env.hand_roots=[]

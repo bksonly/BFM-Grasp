@@ -6,6 +6,7 @@ sys.path[:0]=[str(Path(__file__).resolve().parents[3]/'third_party/BFM-Zero'),st
 from isaaclab.app import AppLauncher
 p=argparse.ArgumentParser()
 p.add_argument('--scale-manifest')
+p.add_argument('--evaluation-manifest',help='Evaluation-only physical geometry overlay; canonical z and training manifest remain unchanged')
 p.add_argument('--dr-config',default=str(Path(__file__).with_name('dr_defaults.json')))
 p.add_argument('--reference-source',choices=['measured','graspxl-geometric'],default='measured')
 p.add_argument('--reference',required=True,help='Original reference without lift, already at control FPS')
@@ -37,6 +38,7 @@ p.add_argument('--collect-only',action='store_true')
 p.add_argument('--tactile-validation',action='store_true',help='Small diagnostic only: reference PD, never a policy training result')
 p.add_argument('--tactile-probe',action='store_true',help='Diagnostic only: synthetic contact sphere per environment')
 p.add_argument('--evaluate',action='store_true')
+p.add_argument('--record-rollout-embeddings',action='store_true',help='Evaluation only: average frozen B encodings of actual states, then project once')
 p.add_argument('--startup-warmup-episodes','--eval-warmup-episodes',dest='startup_warmup_episodes',type=int,default=1,choices=[0,1],help='Discard startup episode before training/evaluation, then fully reset; 0 for diagnostics only')
 p.add_argument('--video',action='store_true')
 p.add_argument('--camera-env',type=int,default=0)
@@ -64,6 +66,18 @@ if args.scale_manifest:
     assert args.hand_only
     import dr_runtime
     dr_runtime.configure(args.dr_config)
+if args.record_rollout_embeddings:assert args.evaluate
+evaluation_manifest=None
+if args.evaluation_manifest:
+    assert args.evaluate and scale_manifest, 'Geometry overlays are evaluation-only'
+    evaluation_manifest=json.loads(Path(args.evaluation_manifest).read_text())
+    records=evaluation_manifest['variants']
+    v=evaluation_manifest['variants_per_class']
+    assert len(records)==v*len(scale_manifest['canonical_references'])
+    for i,record in enumerate(records):
+        assert record['class_id']==i//v
+        assert hashlib.sha256(Path(record['motion']).read_bytes()).hexdigest()==record['motion_sha256']
+    args.motion=records[0]['motion'];args.group_motion=[x['motion'] for x in records[1:]]
 if args.tactile_validation:
     assert args.num_envs<=32 and args.collect_only and not args.evaluate
 if args.tactile_probe:raise ValueError('Old five-elastomer probe is incompatible with ten-body object-filtered contacts')
@@ -72,6 +86,10 @@ if args.kinematic_video:assert args.hand_only and args.video and args.num_envs==
 os.environ['CONTRACK_RBY1A_SHARPA_DATA']=args.motion
 if args.video:args.enable_cameras=True
 app=AppLauncher(args).app
+if evaluation_manifest:
+    # Small evaluation scenes may spawn materials before lazy extension startup.
+    import omni.kit.app
+    omni.kit.app.get_app().get_extension_manager().set_extension_enabled_immediate('omni.kit.material.library',True)
 import gymnasium as gym
 import numpy as np
 import h5py
@@ -110,6 +128,7 @@ torch.manual_seed(args.seed)
 out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
 cfg=parse_env_cfg('Isaac-Rby1a-Sharpa-Mimic-Manager-Play-v0',device=args.device,num_envs=args.num_envs)
 cfg.scale_dr=bool(scale_manifest)
+cfg.scale_variants_per_class=evaluation_manifest['variants_per_class'] if evaluation_manifest else 27
 cfg.seed=args.seed;cfg.actions=Actions();cfg.observations=Obs();cfg.rewards=Rewards();cfg.terminations=Terminations()
 cfg.events.advance_frame=None;cfg.events.object_xy_rand=None;cfg.events.joint_pd_rand=None
 cfg.threshold_curriculum_enabled=False
@@ -284,6 +303,8 @@ try:
     if args.evaluate:(out/'evaluation-warmup.json').write_text(json.dumps(warmup_report,indent=2))
     if args.video:
         wrapped=gym.wrappers.RecordVideo(wrapped,video_folder=str(out/'videos'),step_trigger=lambda t:t==0,video_length=args.steps)
+    embedding_sum=agent._model.backward_map(obs).double() if args.record_rollout_embeddings else None
+    embedding_count=torch.ones(args.num_envs,device=env.device,dtype=torch.long) if args.record_rollout_embeddings else None
     started=time.monotonic()
     last_saved=started
     for step in itertools.count():
@@ -322,6 +343,10 @@ try:
                 (out/'first-formal-step.json').write_text(json.dumps({'speed_gt_1m_s_by_group':{str(int(g)):int(((physical_groups==g)&(speed>1)).sum()) for g in torch.unique(physical_groups)},'max_speed_m_s':float(speed.max())},indent=2))
             done=terminated|truncated
             assert bridge.captured is not None
+            if embedding_sum is not None:
+                active=~seen
+                embedding_sum[active]+=agent._model.backward_map(bridge.captured)[active].double()
+                embedding_count[active]+=1
             if success_log is not None:
                 lengths=env.group_lengths if args.group_motion else env.ref_len
                 success_log.step(phase,lengths,bridge.height-initial_z,bridge.bottom,done,step+1)
@@ -353,7 +378,7 @@ try:
                 hold_bottom[late]=torch.minimum(hold_bottom[late],bridge.bottom[late])
                 for i in ids.tolist():
                     if not seen[i]:
-                        evaluation.append({'env':i,'object_group':int(env.group_id[i]) if hasattr(env,'group_id') else 0,'min_hold_rise_m':float(hold_min[i]),'min_hold_bottom_clearance_m':float(hold_bottom[i]),'success':bool(hold_min[i]>=.04 and hold_bottom[i]>.01)})
+                        evaluation.append({'env':i,'object_group':int(env.group_id[i]) if hasattr(env,'group_id') else 0,'class_id':int(physical_groups[i]),'min_hold_rise_m':float(hold_min[i]),'min_hold_bottom_clearance_m':float(hold_bottom[i]),'success':bool(hold_min[i]>=.04 and hold_bottom[i]>.01)})
                         seen[i]=True
             if scale_manifest and len(ids):
                 assert len(ids)==env.num_envs, 'DR reset currently requires common episode length'
@@ -391,6 +416,10 @@ try:
         if args.evaluate and bool(seen.all()):break
         if step+1>=args.steps and (args.evaluate or time.monotonic()-started>=args.min_train_seconds):break
     actual_steps=step+1
+    if embedding_sum is not None:
+        assert bool(seen.all()), 'Do not export incomplete rollout embeddings'
+        trajectory_z=agent._model.project_z((embedding_sum/embedding_count[:,None]).float())
+        np.savez_compressed(out/'rollout-embeddings.npz',z=trajectory_z.cpu().numpy(),class_id=physical_groups.cpu().numpy(),variant_id=env.group_id.cpu().numpy(),frames=embedding_count.cpu().numpy(),success=np.array([x['success'] for x in sorted(evaluation,key=lambda x:x['env'])]))
     if not args.evaluate:save_checkpoint('checkpoint.pt',actual_steps)
     else:(out/'evaluation.json').write_text(json.dumps({'successes':sum(x['success'] for x in evaluation),'count':len(evaluation),'episodes':evaluation},indent=2))
     if args.replay_bank and not args.evaluate:

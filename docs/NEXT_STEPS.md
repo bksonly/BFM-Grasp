@@ -45,3 +45,14 @@ Authorized alongside the BFM banana-to-basket demo, after the same manual stop/e
 - Do not execute an entire long movement blind by default: observe at fixed action boundaries, then generate the next 22-target command. Allow the same bounded recovery opportunities across conditions. Freeze these limits and prompt versions before scored trials; log development attempts separately.
 - Record grasp/lift success, transport retention, final basket success, drops, number of planner calls, simulated time and wall-clock time. Start with paired seeds and report every scored trial, not only successful videos. This tests whether the learned grasp primitive improves this task; it does not establish that language models cannot control dexterous hands in general.
 - Keep separate reusable prompts for the BFM skill condition and the direct-joint condition, sharing the task, observation and coordinate definitions. Finalize both only after the execution interfaces have been validated.
+
+
+## Authorized work on 2026-10-18
+
+The user authorized stopping both DR runs and evaluating with the organized code. Both jobs stopped gracefully and saved final checkpoints. Evaluate both finals on 2,700 trials each (10 classes × 27 cached geometries × 10 replicates), with all configured DR, deterministic actor means, seed 20261018 and full startup warmup. Record per-class and per-geometry results. These are seen-geometry DR evaluations, not held-out shape tests.
+
+Additional deliverables:
+- Plot frozen B-network reference contexts with t-SNE and add the figure and provenance to the private site. Use the actual future-eight-frame normalized contexts, not hand-authored embeddings. Label correlated time windows and avoid treating plot separation as performance evidence.
+- Complete both banana-to-basket CaP conditions described above, preserve prompts/traces and publish the measured outcomes and videos on the private site.
+- Test uniform scale 1.1 (seen training geometry), 1.05 (held-out scale interpolation), and 1.15 (scale extrapolation), plus distinct meshes from the same categories. Freeze object selections before scored runs and report failures. Reuse each original category's canonical reference for z; do not supply a new object's demonstration to the policy. Keep pose/dynamics/noise DR and paired evaluation seeds consistent, and report geometry groups separately.
+- Add DR evaluation and generalization results to the site only after validation. All changes stay in this Git repository; checkpoints and large trial outputs remain under ignored runs/ or the historical data workspace.

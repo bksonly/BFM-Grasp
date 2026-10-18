@@ -79,9 +79,9 @@ def force(env):
 
 @torch.no_grad()
 def refresh_reset(wrapped,env,bridge):
-    """Synchronous reset: refresh two steps, validate two, restore exact sampled state.
+    """Synchronous reset: refresh four steps, validate two, restore exact sampled state.
 
-    No resampling/rejection: all four steps are discarded, and a failed validation
+    No resampling/rejection: all six steps are discarded, and a failed validation
     aborts. No rollout, reward, replay, normalizer or training step is generated.
     """
     global ENABLED
@@ -100,12 +100,14 @@ def refresh_reset(wrapped,env,bridge):
         # Clear previous episode external forces during reset probes.
         zero=torch.zeros(env.num_envs,1,3,device=env.device)
         env.scene['objects'].set_external_force_and_torque(zero,zero)
-        for i in range(4):
+        diagnostic_steps=int(__import__('os').environ.get('BFM_RESET_DIAGNOSTIC_STEPS','0'))
+        for i in range(max(6,diagnostic_steps)):
             restore();obs=bridge.observe();bridge.before_step(obs,action);wrapped.step(action)
             speed=bridge.reward_state['object_velocity'][:,:3].norm(dim=-1)
             valid=torch.isfinite(speed)&(speed<=1.)
-            checks.append(dict(stage='refresh' if i<2 else 'validation',max_speed_m_s=float(speed.max()),invalid_envs=int((~valid).sum())))
-            if i>=2 and not bool(valid.all()):raise RuntimeError(f'DR reset validation failed: {checks}')
+            checks.append(dict(stage='refresh' if i<4 else 'validation',max_speed_m_s=float(speed.max()),invalid_envs=int((~valid).sum()),invalid_ids=(~valid).nonzero().flatten().tolist(),invalid_groups=env.group_id[~valid].tolist()))
+            if not diagnostic_steps and i>=4 and not bool(valid.all()):raise RuntimeError(f'DR reset validation failed: {checks}')
+        if diagnostic_steps:raise RuntimeError(f'Diagnostic-only reset probes (never scored): {checks}')
         restore();bridge.captured=None
     finally:ENABLED=previous
     return checks
